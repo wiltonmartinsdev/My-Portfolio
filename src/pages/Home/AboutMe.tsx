@@ -8,6 +8,7 @@ import { Divide as Hamburger } from "hamburger-react";
 import { useState } from "react";
 
 import { Badge } from "@/components/ui/badge";
+import profileImage from "@/assets/perfil.png";
 
 function AboutMe() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,7 @@ function AboutMe() {
 				<div className="flex items-center gap-3 mb-10">
 					<img
 						className="border border-neutral-600  w-20 bg-transparent rounded-2xl hover:border-2 hover:border-orange-600"
-						src="./src/assets/perfil.png"
+						src={profileImage}
 						alt="Foto do perfil"
 					/>
 
