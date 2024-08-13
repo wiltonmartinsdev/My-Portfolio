@@ -30,7 +30,7 @@ function AboutMe() {
 				<div className="flex items-center gap-3 mb-10">
 					<img
 						className="border border-neutral-600  w-20 bg-transparent rounded-2xl hover:border-2 hover:border-orange-600"
-						src="src/assets/perfil.png"
+						src="./src/assets/perfil.png"
 						alt="Foto do perfil"
 					/>
 
