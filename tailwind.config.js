@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+import defaultTheme from "tailwindcss/defaultTheme";
+
 module.exports = {
 	darkMode: ["class"],
 	content: [
@@ -16,6 +18,10 @@ module.exports = {
 			screens: {
 				"2xl": "1400px",
 			},
+		},
+		screens: {
+			xsm: { min: "425px" },
+			...defaultTheme.screens,
 		},
 		extend: {
 			keyframes: {

@@ -4,7 +4,14 @@ import {
 	GithubLogo,
 	LinkedinLogo,
 } from "@phosphor-icons/react";
+import {
+	Card,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 import { Divide as Hamburger } from "hamburger-react";
+import { Laptop } from "lucide-react";
 import { useState } from "react";
 
 import { Badge } from "@/components/ui/badge";
@@ -15,9 +22,9 @@ function AboutMe() {
 
 	return (
 		<>
-			<div className="min-w-80 pt-4 px-3 pb-20 sm:flex">
+			<div className="min-w-80 pt-4 px-3 xsm:px-14 pb-20 lg:flex lg:gap-6">
 				<aside
-					className={`flex flex-col items-center justify-center mx-auto bg-neutral-800 overflow-hidden transition-[height] duration-1000 ease-in-out ${
+					className={`border border-neutral-700 flex flex-col items-center justify-center mx-auto bg-neutral-800 overflow-hidden transition-[height] duration-1000 ease-in-out ${
 						isOpen ? "h-96" : "h-44"
 					} rounded-2xl mb-3`}>
 					<span className=" w-full flex justify-end">
@@ -46,7 +53,7 @@ function AboutMe() {
 					</div>
 
 					{isOpen && (
-						<div className=" w-72 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2">
+						<div className="w-72 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2 lg:hidden">
 							<div className=" flex items-center gap-2">
 								<DeviceMobile
 									size={24}
@@ -110,7 +117,7 @@ function AboutMe() {
 					)}
 				</aside>
 
-				<main className="h-auto p-5 rounded-2xl bg-neutral-800 sm:flex sm:flex-1">
+				<main className="border border-neutral-700 min-h-screen p-5 rounded-2xl bg-neutral-800 lg:flex lg:flex-1">
 					<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
 						Sobre mim
 					</h1>
@@ -119,7 +126,7 @@ function AboutMe() {
 						Olá, bem-vindo (a), ao meu portfólio!
 					</p>
 
-					<ul className="text-white">
+					<ul className="text-white mb-8">
 						<li className="mb-4">
 							Sou um entusiasta da programação em busca de
 							oportunidades como Programador Júnior, meu foco é
@@ -157,10 +164,46 @@ function AboutMe() {
 							para conectar e colaborar.
 						</li>
 					</ul>
+
+					<h2 className="text-orange-600 font-semibold mb-4 text-xl">
+						O que estou fazendo...
+					</h2>
+
+					<Card className="border border-neutral-700 mb-4">
+						<CardHeader>
+							<CardTitle className="flex gap-1 items-center justify-center">
+								<Laptop size={24} />
+								Desenvolvimento Web
+							</CardTitle>
+							<CardDescription>
+								Desenvolvimento de soluções web personalizadas,
+								com foco em design moderno, performance
+								otimizada e alto nível de qualidade para atender
+								às necessidades de negócios e usuários.
+							</CardDescription>
+						</CardHeader>
+					</Card>
+
+					<Card className="border border-neutral-700">
+						<CardHeader>
+							<CardTitle className="flex gap-1 items-center justify-center text-base xsm:text-lg">
+								<DeviceMobile size={24} />
+								Desenvolvimento Mobile
+							</CardTitle>
+							<CardDescription>
+								Iniciando meus estudos em desenvolvimento
+								mobile, estou aprimorando minhas habilidades na
+								criação de aplicativos intuitivos e de alta
+								performance para iOS e Android, com foco em
+								crescimento contínuo e aplicação das melhores
+								práticas do mercado.
+							</CardDescription>
+						</CardHeader>
+					</Card>
 				</main>
 			</div>
 
-			<footer className="bg-neutral-800 h-14 flex justify-center items-center rounded-t-2xl fixed bottom-0 left-0 right-0 z-10 sm:hidden">
+			<footer className="border border-neutral-700 bg-neutral-800 h-14 flex justify-center items-center rounded-t-2xl fixed bottom-0 left-0 right-0 z-10 lg:hidden">
 				<nav className="">
 					<ul className="text-white flex gap-3">
 						<li>
