@@ -36,9 +36,9 @@ function AboutMe() {
 					/>
 
 					<div>
-						<h1 className="text-white text-center text-lg hover:text-orange-600">
+						<p className="text-white text-center text-lg hover:text-orange-600">
 							Wilton Lira Martins
-						</h1>
+						</p>
 
 						<Badge>Desenvolvedor Front-end</Badge>
 					</div>
@@ -109,8 +109,48 @@ function AboutMe() {
 				)}
 			</aside>
 
-			<main className="border bg-blue-500 sm:flex sm:flex-1">
-				PRINICPAL
+			<main className="h-auto p-5 rounded-2xl bg-neutral-800 sm:flex sm:flex-1">
+				<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
+					Sobre mim
+				</h1>
+
+				<p className="text-white mb-4">
+					Olá, bem-vindo (a), ao meu portfólio!
+				</p>
+
+				<ul className="text-white">
+					<li className="mb-4">
+						Sou um entusiasta da programação em busca de
+						oportunidades como Programador Júnior, meu foco é
+						utilizar minhas habilidades técnicas em HTML, CSS,
+						JavaScript e React.js para impactar positivamente a vida
+						das pessoas através da tecnologia.
+					</li>
+					<li className="mb-4">
+						Programação para mim não é o que eu quero hoje, é o que
+						eu quero para minha vida! Embora eu esteja no começo da
+						minha trajetória, me vejo diariamente como programador,
+						as dificuldades impostas no caminho são grandes, mas, o
+						que eu aprendi na programação é que nunca devemos
+						desistir e sempre persistir! A constância dos meus
+						estudos me levará aos meus objetivos.
+					</li>
+					<li className="mb-4">
+						Desde meu primeiro contato, de fato, com a programação
+						em 2019, minha paixão por essa área cresceu
+						exponencialmente. Atualmente, estou aprimorando meus
+						conhecimentos na Rocketseat, onde tenho a oportunidade
+						de me desenvolver constantemente.
+					</li>
+					<li>
+						Estou entusiasmado para contribuir com projetos
+						desafiadores e aprender com profissionais experientes.
+						Se você está em busca de um Programador Jr. dedicado,
+						apaixonado por programação e pronto para agregar valor à
+						sua equipe, estou à disposição para conectar e
+						colaborar.
+					</li>
+				</ul>
 			</main>
 		</div>
 	);
