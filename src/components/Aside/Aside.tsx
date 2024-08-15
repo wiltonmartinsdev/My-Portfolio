@@ -1,13 +1,13 @@
-import { Divide as Hamburger } from "hamburger-react";
-import { useState, useEffect } from "react";
-
-import { Badge } from "@/components/ui/badge";
 import {
 	DeviceMobile,
 	EnvelopeSimple,
 	GithubLogo,
 	LinkedinLogo,
 } from "@phosphor-icons/react";
+import { Divide as Hamburger } from "hamburger-react";
+import { useState, useEffect } from "react";
+
+import { Badge } from "@/components/ui/badge";
 import profileImage from "@/assets/perfil.png";
 
 function Aside() {
@@ -52,11 +52,13 @@ function Aside() {
 				/>
 
 				<div>
-					<p className="text-white text-center text-lg hover:text-orange-600">
+					<p className="text-white text-center text-lg hover:text-orange-600 cursor-default">
 						Wilton Lira Martins
 					</p>
 
-					<Badge>Desenvolvedor Front-end</Badge>
+					<Badge className="cursor-default">
+						Desenvolvedor Front-end
+					</Badge>
 				</div>
 			</div>
 

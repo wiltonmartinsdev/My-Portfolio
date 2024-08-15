@@ -12,7 +12,7 @@ import Aside from "@/components/Aside/Aside";
 function AboutMe() {
 	return (
 		<>
-			<div className="min-w-80 pt-16 px-3 xsm:px-14 pb-20 lg:flex lg:justify-center lg:gap-6 lg:w-full">
+			<div className="min-w-80 pt-4 px-3 sm:px-14 pb-20 sm:pt-16 lg:flex lg:justify-center lg:gap-6 lg:w-full">
 				<Aside />
 
 				<main className="border border-neutral-700 p-5 rounded-2xl bg-neutral-800 lg:flex lg:flex-col lg:w-[900px]">
@@ -101,8 +101,8 @@ function AboutMe() {
 				</main>
 			</div>
 
-			<footer className="border border-neutral-700 bg-neutral-800 h-14 flex justify-center items-center rounded-t-2xl fixed bottom-0 left-0 right-0 z-10 lg:hidden">
-				<nav className="">
+			<footer className="border border-neutral-700 bg-neutral-800 h-14 flex justify-center items-center rounded-t-2xl fixed bottom-0 left-0 right-0 z-10">
+				<nav className="lg:hidden">
 					<ul className="text-white flex gap-3">
 						<li>
 							<a
@@ -134,6 +134,16 @@ function AboutMe() {
 						</li>
 					</ul>
 				</nav>
+
+				<div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-0.5">
+					<p className=" text-white hover:text-orange-600 text-xs cursor-default">
+						Desenvolvido por Wilton Lira Martins
+					</p>
+
+					<p className="text-white hover:text-orange-600 text-xs cursor-default">
+						Copyright &copy; 2024 - Todos os direitos reservados.
+					</p>
+				</div>
 			</footer>
 		</>
 	);
