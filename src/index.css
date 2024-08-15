@@ -2,14 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  a { text-decoration: none; }
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
 
 body {
-	background-color:#111111 ;
+	background-color: #111111;
+}
+
+link[rel="shortcut icon"] {
+	background: transparent;
 }

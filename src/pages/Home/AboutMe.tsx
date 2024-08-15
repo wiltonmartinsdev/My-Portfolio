@@ -15,7 +15,7 @@ function AboutMe() {
 			<div className="min-w-80 pt-16 px-3 xsm:px-14 pb-20 lg:flex lg:justify-center lg:gap-6 lg:w-full">
 				<Aside />
 
-				<main className="border border-neutral-700  p-5 rounded-2xl bg-neutral-800 lg:flex lg:flex-col lg:w-[900px]">
+				<main className="border border-neutral-700 p-5 rounded-2xl bg-neutral-800 lg:flex lg:flex-col lg:w-[900px]">
 					<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
 						Sobre mim
 					</h1>
