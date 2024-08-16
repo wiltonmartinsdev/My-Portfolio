@@ -121,6 +121,39 @@ function Aside() {
 							</a>
 						</div>
 					</div>
+
+					<nav>
+						<ul className="flex justify-center gap-3 text-sm lg:hidden">
+							<li className="text-white hover:text-orange-600">
+								<a
+									className="relative pillarsLinkAnimation active:text-orange-600"
+									href="#">
+									Sobre mim
+								</a>
+							</li>
+							<li className="text-white hover:text-orange-600">
+								<a
+									className="relative pillarsLinkAnimation"
+									href="#">
+									Resumo
+								</a>
+							</li>
+							<li className="text-white hover:text-orange-600">
+								<a
+									className="relative pillarsLinkAnimation"
+									href="#">
+									Projetos
+								</a>
+							</li>
+							<li className="text-white hover:text-orange-600">
+								<a
+									className="relative pillarsLinkAnimation"
+									href="#">
+									Contato
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			)}
 		</aside>
