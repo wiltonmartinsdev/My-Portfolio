@@ -15,7 +15,40 @@ function AboutMe() {
 			<div className="min-w-80 pt-4 px-3 sm:px-14 pb-20 sm:pt-16 lg:flex lg:justify-center lg:gap-6 lg:w-full">
 				<Aside />
 
-				<main className="border border-neutral-700 p-5 rounded-2xl bg-neutral-800 lg:flex lg:flex-col lg:w-[900px]">
+				<main className="border border-neutral-700 p-5 pt-0 rounded-2xl bg-neutral-800 lg:flex lg:flex-col lg:w-[900px]">
+					<nav className="hidden lg:flex lg:justify-end lg:h-16 lg:relative left-5 bottom-px ">
+						<ul className="flex items-center gap-4 bg-neutral-700 px-8 border-collapse rounded-tr-2xl rounded-bl-2xl">
+							<li className="text-white hover:text-orange-600">
+								<a
+									className="relative pillarsLinkAnimation"
+									href="#">
+									Sobre mim
+								</a>
+							</li>
+							<li className="text-white hover:text-orange-600">
+								<a
+									className="relative pillarsLinkAnimation"
+									href="#">
+									Resumo
+								</a>
+							</li>
+							<li className="text-white hover:text-orange-600">
+								<a
+									className="relative pillarsLinkAnimation"
+									href="#">
+									Projetos
+								</a>
+							</li>
+							<li className="text-white hover:text-orange-600">
+								<a
+									className="relative pillarsLinkAnimation"
+									href="#">
+									Contato
+								</a>
+							</li>
+						</ul>
+					</nav>
+
 					<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
 						Sobre mim
 					</h1>

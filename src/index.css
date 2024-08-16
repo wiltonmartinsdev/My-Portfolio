@@ -21,3 +21,35 @@ body {
 link[rel="shortcut icon"] {
 	background: transparent;
 }
+
+a.pillarsLinkAnimation::before,
+a.pillarsLinkAnimation::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background-color: #ea580c;
+	transform: scaleY(0);
+	transition: transform 0.5s ease;
+}
+
+a.pillarsLinkAnimation::before {
+	left: -8px;
+	transform-origin: center top;
+}
+
+a.pillarsLinkAnimation:hover::before {
+	transform-origin: center bottom;
+	transform: scaleY(1);
+}
+
+a.pillarsLinkAnimation::after {
+	right: -8px;
+	transform-origin: center bottom;
+}
+
+a.pillarsLinkAnimation:hover::after {
+	transform-origin: center top;
+	transform: scaleY(1);
+}
