@@ -1,15 +1,8 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import Aside from "@/components/Aside/Aside";
 
 export function Projects() {
-	const [activeLink, setActiveLink] = useState("");
-
-	const handleLinkClick = (link: string) => {
-		setActiveLink(link);
-	};
-
 	return (
 		<>
 			<div className="min-w-80 pt-4 px-3 sm:px-14 pb-20 sm:pt-16 lg:flex lg:justify-center lg:gap-6 lg:w-full">
@@ -19,54 +12,48 @@ export function Projects() {
 					<nav className="hidden lg:flex lg:justify-end lg:h-16 lg:relative left-5 bottom-px ">
 						<ul className="flex items-center gap-4 bg-neutral-700 px-8 border-collapse rounded-tr-2xl rounded-bl-2xl">
 							<li>
-								<Link
-									className={`text-white hover:text-orange-600 ${
-										activeLink === "Sobre mim"
+								<NavLink
+									className={({ isActive }) =>
+										isActive
 											? "text-orange-600"
-											: ""
-									}`}
-									to="/"
-									onClick={() =>
-										handleLinkClick("Sobre mim")
-									}>
+											: "text-white"
+									}
+									to="/">
 									Sobre mim
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link
-									className={`text-white hover:text-orange-600 ${
-										activeLink === "Resumo"
+								<NavLink
+									className={({ isActive }) =>
+										isActive
 											? "text-orange-600"
-											: ""
-									}`}
-									to="/resume"
-									onClick={() => handleLinkClick("Resumo")}>
+											: "text-white"
+									}
+									to="/resume">
 									Resumo
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link
-									className={`text-white hover:text-orange-600 ${
-										activeLink === "Projetos"
+								<NavLink
+									className={({ isActive }) =>
+										isActive
 											? "text-orange-600"
-											: ""
-									}`}
-									to="/projects"
-									onClick={() => handleLinkClick("Projetos")}>
+											: "text-white"
+									}
+									to="/projects">
 									Projetos
-								</Link>
+								</NavLink>
 							</li>
 							<li>
-								<Link
-									className={`text-white hover:text-orange-600 ${
-										activeLink === "Contato"
+								<NavLink
+									className={({ isActive }) =>
+										isActive
 											? "text-orange-600"
-											: ""
-									}`}
-									to="/contact"
-									onClick={() => handleLinkClick("Contato")}>
+											: "text-white"
+									}
+									to="/contact">
 									Contato
-								</Link>
+								</NavLink>
 							</li>
 						</ul>
 					</nav>
