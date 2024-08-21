@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
+    "caniuse-lite": "^1.0.30001651",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "hamburger-react": "^2.5.1",
     "lucide-react": "^0.427.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.1",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"
   },

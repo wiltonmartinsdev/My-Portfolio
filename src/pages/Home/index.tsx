@@ -6,11 +6,12 @@ import {
 } from "@/components/ui/card";
 import { Laptop } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { DeviceMobile } from "@phosphor-icons/react";
 import Aside from "@/components/Aside/Aside";
 
-function AboutMe() {
+export function AboutMe() {
 	const [activeLink, setActiveLink] = useState("");
 
 	const handleLinkClick = (link: string) => {
@@ -26,54 +27,54 @@ function AboutMe() {
 					<nav className="hidden lg:flex lg:justify-end lg:h-16 lg:relative left-5 bottom-px ">
 						<ul className="flex items-center gap-4 bg-neutral-700 px-8 border-collapse rounded-tr-2xl rounded-bl-2xl">
 							<li>
-								<a
+								<Link
 									className={`text-white hover:text-orange-600 ${
 										activeLink === "Sobre mim"
 											? "text-orange-600"
 											: ""
 									}`}
-									href="#"
+									to="/"
 									onClick={() =>
 										handleLinkClick("Sobre mim")
 									}>
 									Sobre mim
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className={`text-white hover:text-orange-600 ${
 										activeLink === "Resumo"
 											? "text-orange-600"
 											: ""
 									}`}
-									href="#"
+									to="/resume"
 									onClick={() => handleLinkClick("Resumo")}>
 									Resumo
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className={`text-white hover:text-orange-600 ${
 										activeLink === "Projetos"
 											? "text-orange-600"
 											: ""
 									}`}
-									href="#"
+									to="/projects"
 									onClick={() => handleLinkClick("Projetos")}>
 									Projetos
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									className={`text-white hover:text-orange-600 ${
 										activeLink === "Contato"
 											? "text-orange-600"
 											: ""
 									}`}
-									href="#"
+									to="contact"
 									onClick={() => handleLinkClick("Contato")}>
 									Contato
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</nav>
@@ -177,5 +178,3 @@ function AboutMe() {
 		</>
 	);
 }
-
-export default AboutMe;

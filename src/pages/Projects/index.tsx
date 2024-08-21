@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Aside from "@/components/Aside/Aside";
 
-export function Contact() {
+export function Projects() {
 	const [activeLink, setActiveLink] = useState("");
 
 	const handleLinkClick = (link: string) => {
@@ -63,7 +63,7 @@ export function Contact() {
 											? "text-orange-600"
 											: ""
 									}`}
-									to="contact"
+									to="/contact"
 									onClick={() => handleLinkClick("Contato")}>
 									Contato
 								</Link>
@@ -72,7 +72,7 @@ export function Contact() {
 					</nav>
 
 					<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
-						Contatos
+						Projetos
 					</h1>
 				</main>
 			</div>
