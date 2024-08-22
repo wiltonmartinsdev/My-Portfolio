@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 import Aside from "@/components/Aside/Aside";
+import { Student } from "@phosphor-icons/react";
 
 export function Resume() {
 	return (
@@ -61,6 +62,12 @@ export function Resume() {
 					<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
 						Resumo
 					</h1>
+
+                    <div className="flex">
+                        <Student size={32}/>
+
+                        <h2>Formação Acadêmica</h2>
+                    </div>
 				</main>
 			</div>
 

@@ -6,6 +6,7 @@ import {
 } from "@phosphor-icons/react";
 import { Divide as Hamburger } from "hamburger-react";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 import { Badge } from "@/components/ui/badge";
 import profileImage from "@/assets/perfil.png";
@@ -124,33 +125,49 @@ function Aside() {
 
 					<nav>
 						<ul className="flex justify-center gap-3 text-sm lg:hidden">
-							<li className="text-white hover:text-orange-600">
-								<a
-									className="relative pillarsLinkAnimation active:text-orange-600"
-									href="#">
+							<li>
+								<NavLink
+									className={({ isActive }) =>
+										isActive
+											? "text-orange-600"
+											: "text-white"
+									}
+									to="/">
 									Sobre mim
-								</a>
+								</NavLink>
 							</li>
-							<li className="text-white hover:text-orange-600">
-								<a
-									className="relative pillarsLinkAnimation"
-									href="#">
+							<li>
+								<NavLink
+									className={({ isActive }) =>
+										isActive
+											? "text-orange-600"
+											: "text-white"
+									}
+									to="/resume">
 									Resumo
-								</a>
+								</NavLink>
 							</li>
-							<li className="text-white hover:text-orange-600">
-								<a
-									className="relative pillarsLinkAnimation"
-									href="#">
+							<li>
+								<NavLink
+									className={({ isActive }) =>
+										isActive
+											? "text-orange-600"
+											: "text-white"
+									}
+									to="/projects">
 									Projetos
-								</a>
+								</NavLink>
 							</li>
-							<li className="text-white hover:text-orange-600">
-								<a
-									className="relative pillarsLinkAnimation"
-									href="#">
+							<li className="">
+								<NavLink
+									className={({ isActive }) =>
+										isActive
+											? "text-orange-600"
+											: "text-white"
+									}
+									to="/contact">
 									Contato
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 					</nav>
