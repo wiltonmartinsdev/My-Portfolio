@@ -21,3 +21,7 @@ body {
 link[rel="shortcut icon"] {
 	background: transparent;
 }
+
+.custom-bullet li::marker {
+	color: #ea580c;
+}

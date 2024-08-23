@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import { Code, Student } from "@phosphor-icons/react";
 import Aside from "@/components/Aside/Aside";
-import { Student } from "@phosphor-icons/react";
 
 export function Resume() {
 	return (
@@ -63,11 +63,54 @@ export function Resume() {
 						Resumo
 					</h1>
 
-                    <div className="flex">
-                        <Student size={32}/>
+					<div className="flex items-center gap-2 mb-4">
+						<Student
+							size={32}
+							color="#ea580c"
+						/>
 
-                        <h2>Formação Acadêmica</h2>
-                    </div>
+						<p className="text-orange-600 text-xl font-bold">
+							Formação
+						</p>
+					</div>
+
+					<ol className="relative left-5 list-disc text-white custom-bullet mb-4">
+						<li className="mb-6">
+							Programa de Formação Explorer - Desenvolvimento Web
+							FullStack
+							<ul className="mt-2">
+								<li>2022 - 2023 / RocketSeat</li>
+							</ul>
+						</li>
+						<li>
+							Análise e Desenvolvimento de Sistemas
+							<ul className="mt-2">
+								<li>
+									Em andamento - Centro Universitário
+									Internacional - UNINTER
+								</li>
+							</ul>
+						</li>
+					</ol>
+
+					<div className="flex items-center gap-2 mb-4">
+						<Code
+							size={32}
+							color="#ea580c"
+						/>
+
+						<p className="text-orange-600 text-xl font-bold">
+							Tecnologias
+						</p>
+					</div>
+
+					<ol className="relative left-5 list-disc text-white custom-bullet">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>React</li>
+						<li>Git</li>
+					</ol>
 				</main>
 			</div>
 
