@@ -1,3 +1,10 @@
+import {
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
+} from "@/components/ui/select";
 import { NavLink } from "react-router-dom";
 
 import Aside from "@/components/Aside/Aside";
@@ -61,6 +68,18 @@ export function Projects() {
 					<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
 						Projetos
 					</h1>
+
+					<Select>
+						<SelectTrigger className="w-full text-white">
+							<SelectValue placeholder="Todos" />
+						</SelectTrigger>
+
+						<SelectContent>
+							<SelectItem value="all">Todos</SelectItem>
+							<SelectItem value="webApp">Web</SelectItem>
+							<SelectItem value="mobileApp">Mobile</SelectItem>
+						</SelectContent>
+					</Select>
 				</main>
 			</div>
 
