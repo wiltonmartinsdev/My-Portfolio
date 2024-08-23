@@ -108,7 +108,10 @@ export function Resume() {
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
+						<li>TypeScript</li>
 						<li>React</li>
+						<li>Styled-components</li>
+						<li>Tailwindcss</li>
 						<li>Git</li>
 					</ol>
 				</main>
