@@ -8,8 +8,11 @@ import {
 import { NavLink } from "react-router-dom";
 
 import Aside from "@/components/Aside/Aside";
+import { useState } from "react";
 
 export function Projects() {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
 	return (
 		<>
 			<div className="min-w-80 pt-4 px-3 sm:px-14 pb-20 sm:pt-16 lg:flex lg:justify-center lg:gap-6 lg:w-full">
@@ -69,7 +72,7 @@ export function Projects() {
 						Projetos
 					</h1>
 
-					<Select>
+					<Select onOpenChange={(open) => setIsDropdownOpen(open)}>
 						<SelectTrigger className="w-full text-white">
 							<SelectValue placeholder="Todos" />
 						</SelectTrigger>
@@ -81,7 +84,7 @@ export function Projects() {
 						</SelectContent>
 					</Select>
 
-					<div className="py-6 grid justify-center gap-6 sm:grid-cols-2 sm:justify-items-center xl:grid-cols-3">
+					<div className={`transition-all duration-600 ease-in-out ${isDropdownOpen ? 'mt-24' : 'mt-0'} py-6 grid justify-center gap-6 sm:grid-cols-2 sm:justify-items-center xl:grid-cols-3`}>
 						<div className="card">
 							<svg
 								viewBox="0 0 24 24"
