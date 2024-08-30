@@ -1,9 +1,9 @@
 import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from "@/components/ui/select";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -88,64 +88,90 @@ export function Projects() {
 						className={`transition-all duration-600 ease-in-out ${
 							isDropdownOpen ? "mt-24" : "mt-0"
 						} py-6 grid justify-center gap-6 sm:grid-cols-2 sm:justify-items-center xl:grid-cols-3`}>
-						<div className="card border border-neutral-600 foodExplorerProject">
-							<div className="card__content">
-								<p className="card__title">Food Explorer</p>
-								<p className="card__description">
-									Este projeto consiste em desenvolver um menu
-									interativo de ponta a ponta, ou seja, do
-									Front-End ao Back-End onde terá duas
-									personas que serão o Admin e Usuário.
-								</p>
+						<a
+							href="https://github.com/wiltonmartinsdev/FoodExplorer-Front-end"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className="card border border-neutral-600 foodExplorerProject">
+								<div className="card__content">
+									<p className="card__title">Food Explorer</p>
+									<p className="card__description">
+										Este projeto consiste em desenvolver um
+										menu interativo de ponta a ponta, ou
+										seja, do Front-End ao Back-End onde terá
+										duas personas que serão o Admin e
+										Usuário.
+									</p>
+								</div>
 							</div>
-						</div>
+						</a>
 
-						<div className="card border border-neutral-600 gitFavProject">
-							<div className="card__content">
-								<p className="card__title">Git Fav</p>
-								<p className="card__description">
-									Essa aplicação consiste em pesquisar por um
-									usuário no GitHub e adicioná-lo como usuário
-									favorito.
-								</p>
+						<a
+							href="https://github.com/wiltonmartinsdev/Git-Fav"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className="card border border-neutral-600 gitFavProject">
+								<div className="card__content">
+									<p className="card__title">Git Fav</p>
+									<p className="card__description">
+										Essa aplicação consiste em pesquisar por
+										um usuário no GitHub e adicioná-lo como
+										usuário favorito.
+									</p>
+								</div>
 							</div>
-						</div>
+						</a>
 
-						<div className="card border border-neutral-600 nextNoteProject">
-							<div className="card__content">
-								<p className="card__title">Next Note</p>
-								<p className="card__description">
-									A aplicação permite aos usuários adicionar
-									notas de forma fácil e intuitiva, seja
-									digitando diretamente ou gravando uma nota
-									em áudio que será convertida automaticamente
-									para texto.
-								</p>
+						<a
+							href="https://github.com/wiltonmartinsdev/next-note"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className="card border border-neutral-600 nextNoteProject">
+								<div className="card__content">
+									<p className="card__title">Next Note</p>
+									<p className="card__description">
+										A aplicação permite aos usuários
+										adicionar notas de forma fácil e
+										intuitiva, seja digitando diretamente ou
+										gravando uma nota em áudio que será
+										convertida automaticamente para texto.
+									</p>
+								</div>
 							</div>
-						</div>
+						</a>
 
-						<div className="card border border-neutral-600 focusTimerProject">
-							<div className="card__content">
-								<p className="card__title">Focus Timer</p>
-								<p className="card__description">
-									Este projeto consiste em desenvolver um
-									temporizador e alternar entre o tema light e
-									dark mode.
-								</p>
+						<a
+							href="https://github.com/wiltonmartinsdev/FocusTimer-2.0"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className="card border border-neutral-600 focusTimerProject">
+								<div className="card__content">
+									<p className="card__title">Focus Timer</p>
+									<p className="card__description">
+										Este projeto consiste em desenvolver um
+										temporizador e alternar entre o tema
+										light e dark mode.
+									</p>
+								</div>
 							</div>
-						</div>
+						</a>
 
-						<div className="card border border-neutral-600 imcProject">
-							<div className="card__content">
-								<p className="card__title">
-									Calculadora de IMC
-								</p>
-								<p className="card__description">
-									Esse projeto consiste em fazer o cálculo
-									simples de IMC.
-								</p>
+						<a
+							href="https://github.com/wiltonmartinsdev/Calculadora-de-IMC"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className="card border border-neutral-600 imcProject">
+								<div className="card__content">
+									<p className="card__title">
+										Calculadora de IMC
+									</p>
+									<p className="card__description">
+										Esse projeto consiste em fazer o cálculo
+										simples de IMC.
+									</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</main>
 			</div>
