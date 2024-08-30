@@ -5,13 +5,13 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import Aside from "@/components/Aside/Aside";
-import { useState } from "react";
 
 export function Projects() {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
 	return (
 		<>
@@ -84,95 +84,65 @@ export function Projects() {
 						</SelectContent>
 					</Select>
 
-					<div className={`transition-all duration-600 ease-in-out ${isDropdownOpen ? 'mt-24' : 'mt-0'} py-6 grid justify-center gap-6 sm:grid-cols-2 sm:justify-items-center xl:grid-cols-3`}>
-						<div className="card">
-							<svg
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-							</svg>
+					<div
+						className={`transition-all duration-600 ease-in-out ${
+							isDropdownOpen ? "mt-24" : "mt-0"
+						} py-6 grid justify-center gap-6 sm:grid-cols-2 sm:justify-items-center xl:grid-cols-3`}>
+						<div className="card border border-neutral-600 foodExplorerProject">
 							<div className="card__content">
 								<p className="card__title">Food Explorer</p>
 								<p className="card__description">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco.
+									Este projeto consiste em desenvolver um menu
+									interativo de ponta a ponta, ou seja, do
+									Front-End ao Back-End onde terá duas
+									personas que serão o Admin e Usuário.
 								</p>
 							</div>
 						</div>
 
-						<div className="card">
-							<svg
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-							</svg>
+						<div className="card border border-neutral-600 gitFavProject">
 							<div className="card__content">
 								<p className="card__title">Git Fav</p>
 								<p className="card__description">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco.
+									Essa aplicação consiste em pesquisar por um
+									usuário no GitHub e adicioná-lo como usuário
+									favorito.
 								</p>
 							</div>
 						</div>
 
-						<div className="card">
-							<svg
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-							</svg>
+						<div className="card border border-neutral-600 nextNoteProject">
 							<div className="card__content">
 								<p className="card__title">Next Note</p>
 								<p className="card__description">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco.
+									A aplicação permite aos usuários adicionar
+									notas de forma fácil e intuitiva, seja
+									digitando diretamente ou gravando uma nota
+									em áudio que será convertida automaticamente
+									para texto.
 								</p>
 							</div>
 						</div>
 
-						<div className="card">
-							<svg
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-							</svg>
+						<div className="card border border-neutral-600 focusTimerProject">
 							<div className="card__content">
 								<p className="card__title">Focus Timer</p>
 								<p className="card__description">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco.
+									Este projeto consiste em desenvolver um
+									temporizador e alternar entre o tema light e
+									dark mode.
 								</p>
 							</div>
 						</div>
 
-						<div className="card">
-							<svg
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-							</svg>
+						<div className="card border border-neutral-600 imcProject">
 							<div className="card__content">
 								<p className="card__title">
 									Calculadora de IMC
 								</p>
 								<p className="card__description">
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco.
+									Esse projeto consiste em fazer o cálculo
+									simples de IMC.
 								</p>
 							</div>
 						</div>
