@@ -1,9 +1,9 @@
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
 } from "@/components/ui/select";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -12,6 +12,63 @@ import Aside from "@/components/Aside/Aside";
 
 export function Projects() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+	const [selectedCategory, setSelectedCategory] = useState("all");
+
+	const projects = [
+		{
+			id: 1,
+			title: "Food Explorer",
+			description:
+				"Este projeto consiste em desenvolver um menu interativo de ponta a ponta, ou seja, do Front-End ao Back-End onde terá duas personas que serão o Admin e Usuário.",
+			category: "webApp",
+			href: "https://github.com/wiltonmartinsdev/FoodExplorer-Front-end",
+			image: "src/assets/foodExplorer.png",
+		},
+		{
+			id: 2,
+			title: "Git Fav",
+			description:
+				"Essa aplicação consiste em pesquisar por um usuário no GitHub e adicioná-lo como usuário favorito.",
+			category: "webApp",
+			href: "https://github.com/wiltonmartinsdev/Git-Fav",
+			image: "src/assets/gitFav.png",
+		},
+		{
+			id: 3,
+			title: "Next Note",
+			description:
+				"A aplicação permite aos usuários adicionar notas de forma fácil e intuitiva, seja digitando diretamente ou gravando uma nota em áudio que será convertida automaticamente para texto.",
+			category: "mobileApp",
+			href: "https://github.com/wiltonmartinsdev/next-note",
+			image: "src/assets/nextNote.png",
+		},
+		{
+			id: 4,
+			title: "Focus Timer",
+			description:
+				"Este projeto consiste em desenvolver um temporizador e alternar entre o tema light e dark mode.",
+			category: "webApp",
+			href: "https://github.com/wiltonmartinsdev/FocusTimer-2.0",
+			image: "src/assets/focusTimer.png",
+		},
+		{
+			id: 5,
+			title: "Calculadora de IMC",
+			description:
+				"Esse projeto consiste em fazer o cálculo simples de IMC.",
+			category: "mobileApp",
+			href: "https://github.com/wiltonmartinsdev/Calculadora-de-IMC",
+			image: "src/assets/imc.png",
+		},
+	];
+
+	const filteredProjects =
+		selectedCategory === "all"
+			? projects
+			: projects.filter(
+					(project) => project.category === selectedCategory
+			);
 
 	return (
 		<>
@@ -72,7 +129,9 @@ export function Projects() {
 						Projetos
 					</h1>
 
-					<Select onOpenChange={(open) => setIsDropdownOpen(open)}>
+					<Select
+						onOpenChange={(open) => setIsDropdownOpen(open)}
+						onValueChange={(value) => setSelectedCategory(value)}>
 						<SelectTrigger className="w-full text-white">
 							<SelectValue placeholder="Todos" />
 						</SelectTrigger>
@@ -88,90 +147,29 @@ export function Projects() {
 						className={`transition-all duration-600 ease-in-out ${
 							isDropdownOpen ? "mt-24" : "mt-0"
 						} py-6 grid justify-center gap-6 sm:grid-cols-2 sm:justify-items-center xl:grid-cols-3`}>
-						<a
-							href="https://github.com/wiltonmartinsdev/FoodExplorer-Front-end"
-							target="_blank"
-							rel="noopener noreferrer">
-							<div className="card border border-neutral-600 foodExplorerProject">
-								<div className="card__content">
-									<p className="card__title">Food Explorer</p>
-									<p className="card__description">
-										Este projeto consiste em desenvolver um
-										menu interativo de ponta a ponta, ou
-										seja, do Front-End ao Back-End onde terá
-										duas personas que serão o Admin e
-										Usuário.
-									</p>
+						{filteredProjects.map((project) => (
+							<a
+								key={project.id}
+								href={project.href}
+								target="_blank"
+								rel="noopener noreferrer">
+								<div className="card border border-neutral-600">
+									<img
+										src={project.image}
+										alt={project.title}
+										className="card__image"
+									/>
+									<div className="card__content">
+										<p className="card__title">
+											{project.title}
+										</p>
+										<p className="card__description">
+											{project.description}
+										</p>
+									</div>
 								</div>
-							</div>
-						</a>
-
-						<a
-							href="https://github.com/wiltonmartinsdev/Git-Fav"
-							target="_blank"
-							rel="noopener noreferrer">
-							<div className="card border border-neutral-600 gitFavProject">
-								<div className="card__content">
-									<p className="card__title">Git Fav</p>
-									<p className="card__description">
-										Essa aplicação consiste em pesquisar por
-										um usuário no GitHub e adicioná-lo como
-										usuário favorito.
-									</p>
-								</div>
-							</div>
-						</a>
-
-						<a
-							href="https://github.com/wiltonmartinsdev/next-note"
-							target="_blank"
-							rel="noopener noreferrer">
-							<div className="card border border-neutral-600 nextNoteProject">
-								<div className="card__content">
-									<p className="card__title">Next Note</p>
-									<p className="card__description">
-										A aplicação permite aos usuários
-										adicionar notas de forma fácil e
-										intuitiva, seja digitando diretamente ou
-										gravando uma nota em áudio que será
-										convertida automaticamente para texto.
-									</p>
-								</div>
-							</div>
-						</a>
-
-						<a
-							href="https://github.com/wiltonmartinsdev/FocusTimer-2.0"
-							target="_blank"
-							rel="noopener noreferrer">
-							<div className="card border border-neutral-600 focusTimerProject">
-								<div className="card__content">
-									<p className="card__title">Focus Timer</p>
-									<p className="card__description">
-										Este projeto consiste em desenvolver um
-										temporizador e alternar entre o tema
-										light e dark mode.
-									</p>
-								</div>
-							</div>
-						</a>
-
-						<a
-							href="https://github.com/wiltonmartinsdev/Calculadora-de-IMC"
-							target="_blank"
-							rel="noopener noreferrer">
-							<div className="card border border-neutral-600 imcProject">
-								<div className="card__content">
-									<p className="card__title">
-										Calculadora de IMC
-									</p>
-									<p className="card__description">
-										Esse projeto consiste em fazer o cálculo
-										simples de IMC.
-									</p>
-								</div>
-							</div>
-						</a>
+							</a>
+						))}
 					</div>
 				</main>
 			</div>

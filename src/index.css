@@ -70,7 +70,6 @@ link[rel="shortcut icon"] {
 	font-size: 24px;
 	color: #333;
 	font-weight: 700;
-    
 }
 
 .card__description {
@@ -79,30 +78,7 @@ link[rel="shortcut icon"] {
 	line-height: 1.4;
 }
 
-.foodExplorerProject {
-	background-image: url(src/assets/foodExplorer.png);
-	background-size: cover;
-}
-
-.gitFavProject {
-	background-image: url(src/assets/gitFav.png);
-	background-size: 235px 100%;
-	background-repeat: no-repeat;
-}
-
-.nextNoteProject {
-	background-image: url(src/assets/nextNote.png);
-	background-size: cover;
-}
-
-.focusTimerProject {
-	background-image: url(src/assets/focusTimer.png);
-	background-size: 270px 100%;
-	background-repeat: no-repeat;
-}
-
-.imcProject {
-	background-image: url(src/assets/imc.png);
-	background-size: 235px 100%;
-	background-repeat: no-repeat;
+.card__image {
+	width: 100%;
+	height: 100%;
 }
