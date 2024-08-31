@@ -1,9 +1,15 @@
 {
-	"redirects": [
-		{
-			"source": "/(.*)",
-			"destination": "/index.html",
-			"permanent": false
-		}
-	]
-}
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html",
+        "has": [
+          {
+            "type": "host",
+            "value": "https://devwiltonmartins.vercel.app/"
+          }
+        ],
+        "permanent": false
+      }
+    ]
+  }
