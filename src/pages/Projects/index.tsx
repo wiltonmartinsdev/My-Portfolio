@@ -9,6 +9,11 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import Aside from "@/components/Aside/Aside";
+import focusTimerImg from "@/assets/focusTimer.png";
+import foodExplorerImg from "@/assets/foodExplorer.png";
+import gitFavImg from "@/assets/gitFav.png";
+import imcImg from "@/assets/imc.png";
+import nextNoteImg from "@/assets/nextNote.png";
 
 export function Projects() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -23,7 +28,7 @@ export function Projects() {
 				"Este projeto consiste em desenvolver um menu interativo de ponta a ponta, ou seja, do Front-End ao Back-End onde terá duas personas que serão o Admin e Usuário.",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/FoodExplorer-Front-end",
-			image: "src/assets/foodExplorer.png",
+			image: foodExplorerImg,
 		},
 		{
 			id: 2,
@@ -32,7 +37,7 @@ export function Projects() {
 				"Essa aplicação consiste em pesquisar por um usuário no GitHub e adicioná-lo como usuário favorito.",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/Git-Fav",
-			image: "src/assets/gitFav.png",
+			image: gitFavImg,
 		},
 		{
 			id: 3,
@@ -41,7 +46,7 @@ export function Projects() {
 				"A aplicação permite aos usuários adicionar notas de forma fácil e intuitiva, seja digitando diretamente ou gravando uma nota em áudio que será convertida automaticamente para texto.",
 			category: "mobileApp",
 			href: "https://github.com/wiltonmartinsdev/next-note",
-			image: "src/assets/nextNote.png",
+			image: nextNoteImg,
 		},
 		{
 			id: 4,
@@ -50,7 +55,7 @@ export function Projects() {
 				"Este projeto consiste em desenvolver um temporizador e alternar entre o tema light e dark mode.",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/FocusTimer-2.0",
-			image: "src/assets/focusTimer.png",
+			image: focusTimerImg,
 		},
 		{
 			id: 5,
@@ -59,7 +64,7 @@ export function Projects() {
 				"Esse projeto consiste em fazer o cálculo simples de IMC.",
 			category: "mobileApp",
 			href: "https://github.com/wiltonmartinsdev/Calculadora-de-IMC",
-			image: "src/assets/imc.png",
+			image: imcImg,
 		},
 	];
 
@@ -68,7 +73,7 @@ export function Projects() {
 			? projects
 			: projects.filter(
 					(project) => project.category === selectedCategory
-			);
+			  );
 
 	return (
 		<>
