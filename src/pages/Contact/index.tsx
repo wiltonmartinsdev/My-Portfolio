@@ -60,7 +60,7 @@ export function Contact() {
 						</ul>
 					</nav>
 
-					<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
+					<h1 className="text-center sm:text-left text-orange-600 font-semibold mb-4 text-3xl">
 						Contato
 					</h1>
 
