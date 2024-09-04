@@ -31,7 +31,13 @@ const formValidationSchema = zod.object({
 			1,
 			"Ops! Parece que você esqueceu de preencher o assunto. Por favor, adicione um título para sua mensagem."
 		),
-	message: zod.string(),
+	message: zod
+		.string()
+		.trim()
+		.min(
+			1,
+			"Ops! Parece que você esqueceu de preencher este campo. Por favor, digite sua mensagem."
+		),
 });
 
 type FormData = zod.infer<typeof formValidationSchema>;

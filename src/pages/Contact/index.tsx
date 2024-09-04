@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { ContactForm } from "@/components/Form";
 import Aside from "@/components/Aside/Aside";
 
+
 export function Contact() {
 	return (
 		<>
