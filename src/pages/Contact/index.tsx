@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 
+import { ContactForm } from "@/components/Form";
 import Aside from "@/components/Aside/Aside";
 
 export function Contact() {
@@ -59,8 +60,15 @@ export function Contact() {
 					</nav>
 
 					<h1 className="text-orange-600 font-semibold mb-4 text-3xl">
-						Contatos
+						Contato
 					</h1>
+
+					<p className="text-center text-white text-2xl font-bold mb-12">
+						Vamos{" "}
+						<span className="text-orange-600">conversar?</span>
+					</p>
+
+					<ContactForm />
 				</main>
 			</div>
 
