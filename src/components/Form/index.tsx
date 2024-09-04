@@ -12,12 +12,14 @@ import { Textarea } from "../ui/textarea";
 const formValidationSchema = zod.object({
 	name: zod
 		.string()
+		.trim()
 		.min(
 			1,
-			"Ops! Parece que você esqueceu de inserir o seu nome ou o nome da sua empresa. Por favor, adicione para que eu possa saber com quem estou falando."
+			"Ops! Por favor, insira o seu nome ou o nome da sua empresa para que eu possa entrar em contato corretamente."
 		),
 	email: zod
 		.string()
+		.trim()
 		.min(
 			1,
 			"Ops! Parece que você esqueceu de inserir seu e-mail. Por favor, adicione para que eu possa entrar em contato."
@@ -27,6 +29,7 @@ const formValidationSchema = zod.object({
 		),
 	subject: zod
 		.string()
+		.trim()
 		.min(
 			1,
 			"Ops! Parece que você esqueceu de preencher o assunto. Por favor, adicione um título para sua mensagem."
@@ -117,19 +120,16 @@ export function ContactForm() {
 					type="text"
 					{...register("name")}
 					placeholder="Nome/Empresa"
-					className=""
 				/>
 				<Input
 					type="email"
 					{...register("email")}
 					placeholder="E-mail"
-					className=""
 				/>
 				<Input
 					type="text"
 					{...register("subject")}
 					placeholder="Assunto"
-					className=""
 				/>
 			</div>
 
