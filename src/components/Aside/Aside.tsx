@@ -9,7 +9,11 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import { Badge } from "@/components/ui/badge";
+import CSSLogo from "@/assets/cssLogo.png";
+import HTMLLogo from "@/assets/htmlLogo.png";
+import JSLogo from "@/assets/jsLogo.png";
 import profileImage from "@/assets/perfil.png";
+import ReactLogo from "@/assets/reactLogo.png";
 
 function Aside() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +37,7 @@ function Aside() {
 	return (
 		<aside
 			className={`border border-neutral-700 flex flex-col items-center justify-center mx-auto bg-neutral-800 overflow-hidden transition-[height] duration-1000 ease-in-out ${
-				isOpen || isLargeScreen ? "h-96 lg:h-[560px]" : "h-44"
+				isOpen || isLargeScreen ? "h-[420px] lg:h-[560px]" : "h-56"
 			} rounded-2xl mb-3 lg:w-72 lg:mx-0 lg:sticky lg:top-16`}>
 			<span className="w-full flex justify-end lg:hidden">
 				<Hamburger
@@ -45,7 +49,7 @@ function Aside() {
 				/>
 			</span>
 
-			<div className="flex items-center gap-3 mb-10 lg:flex lg:flex-col">
+			<div className="flex items-center gap-3 mb-4 lg:flex lg:flex-col">
 				<img
 					className="border border-neutral-600 w-20 bg-transparent rounded-2xl hover:border-2 hover:border-orange-600 lg:w-32"
 					src={profileImage}
@@ -61,6 +65,26 @@ function Aside() {
 						Desenvolvedor Front-end
 					</Badge>
 				</div>
+			</div>
+
+			<div className="flex gap-8 sm:gap-4 mb-4 mt-4">
+				<img
+					src={HTMLLogo}
+					className="w-6 transition-transform duration-500 ease-in-out hover:scale-125"
+				/>
+				<img
+					src={CSSLogo}
+					className="w-6 transition-transform duration-500 ease-in-out hover:scale-125"
+				/>
+				<img
+					src={JSLogo}
+					className="w-6 transition-transform duration-500 ease-in-out hover:scale-125"
+				/>
+
+				<img
+					src={ReactLogo}
+					className="w-7 relative right-1 transition-transform duration-500 ease-in-out hover:scale-125"
+				/>
 			</div>
 
 			{(isOpen || isLargeScreen) && (
