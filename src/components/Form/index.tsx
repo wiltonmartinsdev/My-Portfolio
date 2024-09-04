@@ -117,23 +117,26 @@ export function ContactForm() {
 					type="text"
 					{...register("name")}
 					placeholder="Nome/Empresa"
+					className=""
 				/>
 				<Input
 					type="email"
 					{...register("email")}
 					placeholder="E-mail"
+					className=""
 				/>
 				<Input
 					type="text"
 					{...register("subject")}
 					placeholder="Assunto"
+					className=""
 				/>
 			</div>
 
 			<Textarea
 				{...register("message")}
 				placeholder="Sua mensagem..."
-				className="mb-4"
+				className=" mb-4"
 			/>
 
 			<div className="flex justify-end">

@@ -10,10 +10,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
-		<ToastContainer
-			position="top-center"
-			style={{ zIndex: 10000}}
-		/>
+		<ToastContainer position="top-center" />
 
 		<BrowserRouter>
 			<AppRoutes />
