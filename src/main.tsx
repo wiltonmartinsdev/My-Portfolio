@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
 		<ToastContainer
 			position="top-center"
-			style={{ zIndex: 10000 }}
+			style={{ zIndex: 10000, width: "330px" }}
 		/>
 
 		<BrowserRouter>
