@@ -1,61 +1,35 @@
-# Portfólio - Wilton Lira Martins
+# 💼 Meu Portfólio
 
-Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end, bem como compartilhar um pouco da minha jornada e projetos. Acesse o site para ver mais!
+Bem-vindo ao meu portfólio! Este projeto foi desenvolvido com o objetivo de apresentar minhas habilidades, projetos e formas de contato. 🚀
 
-## 🎨 Tecnologias Utilizadas
+## 🔗 Páginas
 
-- **React** - Biblioteca para construção de interfaces de usuário.
-- **TypeScript** - Superset do JavaScript que adiciona tipagem estática.
-- **TailwindCSS** - Framework de CSS utilitário para estilização rápida e responsiva.
-- **Shadcn/UI** - Componentes acessíveis e personalizáveis.
-- **React Hook Form** - Gerenciamento de formulários com performance otimizada.
-- **Zod** - Biblioteca de validação e parsing de esquemas.
+- **Sobre Mim**: Uma breve introdução sobre quem sou, minhas experiências e interesses. 👋
+- **Resumo**: Um overview do meu histórico profissional e acadêmico.
+- **Projetos**: Uma coleção dos meus principais projetos, destacando as tecnologias utilizadas e os desafios superados. 💻
+- **Contato**: Fique à vontade para entrar em contato através do formulário. 📬
 
-## 🚀 Páginas
+## 🛠️ Tecnologias Utilizadas
 
-- **Sobre Mim**: Um pouco sobre minha trajetória, minhas paixões e o que me motiva como desenvolvedor.
-- **Resumo**: Um resumo das minhas habilidades técnicas, experiência e educação.
-- **Projetos**: Uma galeria dos meus projetos com descrições e links para visualização.
-- **Contato**: Um formulário de contato onde você pode enviar uma mensagem diretamente para mim. Validações são feitas utilizando `Zod` e `React Hook Form`.
+Este portfólio foi desenvolvido com as seguintes tecnologias modernas e ferramentas para otimização de performance e design:
 
-## 🛠️ Instalação e Uso
+- **React**: Biblioteca JavaScript para criar interfaces de usuário interativas.
+- **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática para maior segurança e produtividade.
+- **TailwindCSS**: Framework de CSS para um design rápido e responsivo, utilizando classes utilitárias.
+- **Shadcn/ui**: Componentes acessíveis e personalizáveis, facilitando a construção da UI.
+- **Zod**: Biblioteca de validação de esquemas, utilizada para garantir que os dados dos formulários estejam sempre corretos.
+- **React Hook Form**: Gerenciamento de formulários de maneira simples e eficiente com foco em performance.
 
-Para rodar o projeto localmente, siga as etapas abaixo:
+## 🚀 Funcionalidades
+
+- **Formulário Validado**: Utilizando `Zod` para validação de dados e `react-hook-form` para fácil gerenciamento do estado dos formulários.
+- **Design Responsivo**: Graças ao `TailwindCSS`, o portfólio é completamente adaptável a diferentes tamanhos de tela.
+- **Componentização Moderna**: Com `Shadcn/ui`, todos os componentes são estilizados e de fácil reutilização.
+
+## 📂 Como Rodar o Projeto
+
+Para executar localmente o projeto, siga os passos:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-
-2. Acesse a pasta do projeto:
-    cd seu-repositório
-
-3. Instale as dependências:
-    npm install
-
-4. Rode o projeto
-npm start
-
-5. Acesso o projeto no navegador:
-
-    http://localhost:3000
-
-## 🌱 Aprendizados
-
-Durante o desenvolvimento do meu portfólio, adquiri uma série de aprendizados valiosos que aprimoraram minhas habilidades como desenvolvedor front-end:
-
-- **Organização e Arquitetura de Código**: Aprendi a estruturar um projeto de maneira eficiente, organizando componentes e pastas de uma forma clara e escalável, o que facilita futuras manutenções e atualizações.
-
-- **TypeScript**: A implementação do TypeScript me permitiu escrever um código mais seguro e confiável, minimizando erros de tipo e me forçando a pensar de forma mais cuidadosa sobre os tipos e estruturas de dados.
-
-- **TailwindCSS e Estilização Utilitária**: Utilizar TailwindCSS foi uma experiência que mudou minha visão sobre como aplicar estilos de forma rápida e responsiva. As classes utilitárias se mostraram eficientes para manter o CSS mais limpo e focado.
-
-- **Formulários com React Hook Form, Zod e EmailJS**: O processo de validação de formulários com `React Hook Form` e `Zod` me permitiu lidar com validações de forma mais robusta e eficiente. Além disso, integrar o EmailJS para enviar as mensagens do formulário foi uma experiência valiosa de integração com serviços externos, simplificando o envio de e-mails diretamente do site.
-
-- **Componentização com Shadcn/UI**: Utilizar componentes pré-construídos e acessíveis me ajudou a focar mais na lógica e menos na estilização, o que acelerou o desenvolvimento e melhorou a consistência visual do portfólio.
-
-- **Deploy e Hospedagem**: A experiência de deploy na Vercel foi muito enriquecedora, pois tive a oportunidade de resolver problemas relacionados a rotas, imagens e redirecionamentos, o que solidificou meus conhecimentos em deploy de aplicações front-end.
-
-- **Resolução de Problemas**: Durante o desenvolvimento, enfrentei desafios como erros em formulários, comportamento de layout em dispositivos móveis e integrações com serviços externos. Cada obstáculo me ajudou a melhorar minha capacidade de resolução de problemas e a buscar soluções mais eficientes.
-
-Esses aprendizados contribuíram para que eu evoluísse não só tecnicamente, mas também na minha capacidade de pensar em soluções mais escaláveis e em proporcionar uma melhor experiência para o usuário final.
-
+   git clone https://github.com/seu-usuario/portfolio.git
