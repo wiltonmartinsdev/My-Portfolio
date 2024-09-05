@@ -7,6 +7,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 - **TailwindCSS** - Framework de CSS utilitário para estilização rápida e responsiva.
 - **Shadcn/UI** - Componentes acessíveis e personalizáveis.
 - **React Hook Form** - Gerenciamento de formulários com performance otimizada.
+- **EmailJS**: Serviço para envio de e-mails diretamente do site, utilizado para enviar o conteúdo do formulário de contato.
 - **Zod** - Biblioteca de validação e parsing de esquemas.
 
 ## 🚀 Páginas
@@ -36,6 +37,13 @@ npm start
 5. Acesso o projeto no navegador:
 
     http://localhost:3000
+
+## ⚙️ Funcionalidades
+
+- **Responsividade**: O layout foi projetado para ser responsivo em todos os dispositivos, garantindo uma experiência de usuário fluida tanto em desktop quanto em dispositivos móveis.
+- **Navegação**: Implementação de navegação entre diferentes seções do portfólio utilizando React Router.
+- **Formulário de Contato**: Um formulário de contato funcional, validado com Zod e React Hook Form, que permite enviar mensagens diretamente para o meu e-mail via EmailJS.
+- **Animações**: Utilização de animações simples para melhorar a interatividade do site.
 
 ## 🌱 Aprendizados
 
