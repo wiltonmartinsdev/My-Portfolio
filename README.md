@@ -14,7 +14,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 
 ## 🛠️ Pré-requisitos
 
--   Node.js instalado na máquina - versão 20.17.0-LTS ou superior .
+-   Node.js instalado na máquina - versão 20.17.0-LTS ou superior.
 -   NPM (Node Package Manager) para instalar as dependências necessárias do projeto.
 
 ## 🛠️ Instalação
@@ -50,7 +50,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 
 ## 📄 Licença
 
-![GitHub License](https://img.shields.io/github/license/wiltonmartinsdev/next-note)
+![GitHub License](https://img.shields.io/github/license/wiltonmartinsdev/my-portfolio)
 
 
 ## 📚 Aprendizados
