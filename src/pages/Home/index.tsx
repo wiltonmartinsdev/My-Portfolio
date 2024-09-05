@@ -76,9 +76,10 @@ export function AboutMe() {
 
 					<ul className="text-white mb-8">
 						<li className="mb-4">
-							Sou um entusiasta da programação em busca de
-							oportunidades como Programador Júnior, meu foco é
-							utilizar minhas habilidades técnicas em {""}
+							Sou um desenvolvedor apaixonado por tecnologia e
+							programação e estou em busca de oportunidades como
+							Desenvolvedor Júnior, meu foco é utilizar minhas
+							habilidades técnicas em {""}
 							<span className="text-orange-600">
 								HTML, CSS, JavaScript e React
 							</span>{" "}
@@ -86,17 +87,17 @@ export function AboutMe() {
 							através da tecnologia.
 						</li>
 						<li className="mb-4">
-							Programação para mim não é o que eu quero hoje, é o
-							que eu quero para minha vida! Embora eu esteja no
-							começo da minha trajetória, me vejo diariamente como
-							programador, as dificuldades impostas no caminho são
-							grandes, mas, o que eu aprendi na programação é que
-							nunca devemos desistir e sempre persistir! A
-							constância dos meus estudos me levará aos meus
-							objetivos.
+							Programação para mim não é apenas um desejo
+							momentâneo, é o que quero para minha vida! Embora eu
+							esteja no começo da minha trajetória, me vejo
+							diariamente como um desenvolvedor, as dificuldades
+							impostas no caminho são grandes, mas, o que eu
+							aprendi na programação é que nunca devemos desistir
+							e sempre persistir! Com a constância dos meus
+							estudos, sei que atingirei meus objetivos.
 						</li>
 						<li className="mb-4">
-							Desde meu primeiro contato, de fato, com a
+							Desde meu primeiro contato com a
 							programação em 2019, minha paixão por essa área
 							cresceu exponencialmente. Atualmente, estou
 							aprimorando meus conhecimentos na Rocketseat, onde
