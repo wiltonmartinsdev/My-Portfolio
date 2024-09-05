@@ -1,6 +1,7 @@
 Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end, bem como compartilhar um pouco da minha jornada e projetos. Acesse o site para ver mais!
 
-<h2> 🎨 Tecnologias Utilizadas <h2/>
+
+## Stack utilizada
 
 - **React** - Biblioteca para construção de interfaces de usuário.
 - **TypeScript** - Superset do JavaScript que adiciona tipagem estática.
@@ -10,42 +11,47 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 - **EmailJS**: Serviço para envio de e-mails diretamente do site, utilizado para enviar o conteúdo do formulário de contato.
 - **Zod** - Biblioteca de validação e parsing de esquemas.
 
-## 🚀 Páginas
 
-- **Sobre Mim**: Um pouco sobre minha trajetória, minhas paixões e o que me motiva como desenvolvedor.
-- **Resumo**: Um resumo das minhas habilidades técnicas, experiência e educação.
-- **Projetos**: Uma galeria dos meus projetos com descrições e links para visualização.
-- **Contato**: Um formulário de contato onde você pode enviar uma mensagem diretamente para mim. Validações são feitas utilizando `Zod` e `React Hook Form`.
+## Pré-requisitos
 
-## 🛠️ Instalação e Uso
+-   Node.js instalado na máquina - versão 20.17.0-LTS ou superior .
+-   NPM (Node Package Manager) para instalar as dependências necessárias do projeto.
+## Instalação
 
-Para rodar o projeto localmente, siga as etapas abaixo:
+- Clone o repositório, com o comando abaixo, no seu terminal:
+   - Utizando HTTPS `git clone git@github.com:wiltonmartinsdev/next-note.git` ou
+   - Utilizando SSH: `git clone git@github.com:wiltonmartinsdev/next-note.git`.
+- Acesse o diretório do projeto: `cd next-note`.
+- Certifique-se de ter o Node.js e o NPM instalados em sua máquina e depois digite no terminal o comando abaixo para instalar todas as dependências necessárias do projeto.
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+      npm install
+    
+## Execução da Aplicação
 
-2. Acesse a pasta do projeto:
-    cd seu-repositório
+-   Após instalar todas as dependências necessárias do projeto, agora poderá executá-lo da seguinte maneira:
+-   Digite no terminal o comando abaixo:
 
-3. Instale as dependências:
-    npm install
+          npm run dev
 
-4. Rode o projeto
-npm start
-
-5. Acesso o projeto no navegador:
-
-    http://localhost:3000
-
-## ⚙️ Funcionalidades
+          Após esse comando, o servidor será iniciado e aparecerá a mensagem: "Local: http://localhost:" informando que o servidor esta sendo executado e mostrará a porta de execução. A partir, desta etapa podemos testar a aplicação.
+## Funcionalidades
 
 - **Responsividade**: O layout foi projetado para ser responsivo em todos os dispositivos, garantindo uma experiência de usuário fluida tanto em desktop quanto em dispositivos móveis.
 - **Navegação**: Implementação de navegação entre diferentes seções do portfólio utilizando React Router.
 - **Formulário de Contato**: Um formulário de contato funcional, validado com Zod e React Hook Form, que permite enviar mensagens diretamente para o meu e-mail via EmailJS.
-- **Animações**: Utilização de animações simples para melhorar a interatividade do site.
+- **Animações**: Utilização de animações para melhorar a interatividade do site.
 
-## 🌱 Aprendizados
+
+
+## Status do Projeto
+
+-  A aplicação encontra-se finalizada, mas, podendo ser implementada novas funcionalidades no futuro.
+## Licença
+
+![GitHub License](https://img.shields.io/github/license/wiltonmartinsdev/next-note)
+
+
+## Aprendizados
 
 Durante o desenvolvimento do meu portfólio, adquiri uma série de aprendizados valiosos que aprimoraram minhas habilidades como desenvolvedor front-end:
 
@@ -64,4 +70,3 @@ Durante o desenvolvimento do meu portfólio, adquiri uma série de aprendizados 
 - **Resolução de Problemas**: Durante o desenvolvimento, enfrentei desafios como erros em formulários, comportamento de layout em dispositivos móveis e integrações com serviços externos. Cada obstáculo me ajudou a melhorar minha capacidade de resolução de problemas e a buscar soluções mais eficientes.
 
 Esses aprendizados contribuíram para que eu evoluísse não só tecnicamente, mas também na minha capacidade de pensar em soluções mais escaláveis e em proporcionar uma melhor experiência para o usuário final.
-
