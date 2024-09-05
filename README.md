@@ -1,7 +1,7 @@
 Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end, bem como compartilhar um pouco da minha jornada e projetos. Acesse o site para ver mais!
 
 
-## Stack utilizada
+## 🎨 Stack utilizada
 
 - **React** - Biblioteca para construção de interfaces de usuário.
 - **TypeScript** - Superset do JavaScript que adiciona tipagem estática.
@@ -12,21 +12,22 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 - **Zod** - Biblioteca de validação e parsing de esquemas.
 
 
-## Pré-requisitos
+## 🛠️ Pré-requisitos
 
 -   Node.js instalado na máquina - versão 20.17.0-LTS ou superior .
 -   NPM (Node Package Manager) para instalar as dependências necessárias do projeto.
-## Instalação
+
+## 🛠️ Instalação
 
 - Clone o repositório, com o comando abaixo, no seu terminal:
-   - Utizando HTTPS `git clone git@github.com:wiltonmartinsdev/next-note.git` ou
-   - Utilizando SSH: `git clone git@github.com:wiltonmartinsdev/next-note.git`.
-- Acesse o diretório do projeto: `cd next-note`.
+  - Utizando HTTPS `https://github.com/wiltonmartinsdev/My-Portfolio.git` ou
+  - Utilizando SSH: `git@github.com:wiltonmartinsdev/My-Portfolio.git`.
+- Acesse o diretório do projeto: `cd my-portfolio`.
 - Certifique-se de ter o Node.js e o NPM instalados em sua máquina e depois digite no terminal o comando abaixo para instalar todas as dependências necessárias do projeto.
 
       npm install
     
-## Execução da Aplicação
+## 🚀 Execução da Aplicação
 
 -   Após instalar todas as dependências necessárias do projeto, agora poderá executá-lo da seguinte maneira:
 -   Digite no terminal o comando abaixo:
@@ -34,7 +35,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
           npm run dev
 
           Após esse comando, o servidor será iniciado e aparecerá a mensagem: "Local: http://localhost:" informando que o servidor esta sendo executado e mostrará a porta de execução. A partir, desta etapa podemos testar a aplicação.
-## Funcionalidades
+## ✨ Funcionalidades
 
 - **Responsividade**: O layout foi projetado para ser responsivo em todos os dispositivos, garantindo uma experiência de usuário fluida tanto em desktop quanto em dispositivos móveis.
 - **Navegação**: Implementação de navegação entre diferentes seções do portfólio utilizando React Router.
@@ -43,15 +44,16 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 
 
 
-## Status do Projeto
+## 📊 Status do Projeto
 
 -  A aplicação encontra-se finalizada, mas, podendo ser implementada novas funcionalidades no futuro.
-## Licença
+
+## 📄 Licença
 
 ![GitHub License](https://img.shields.io/github/license/wiltonmartinsdev/next-note)
 
 
-## Aprendizados
+## 📚 Aprendizados
 
 Durante o desenvolvimento do meu portfólio, adquiri uma série de aprendizados valiosos que aprimoraram minhas habilidades como desenvolvedor front-end:
 
