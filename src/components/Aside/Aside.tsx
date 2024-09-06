@@ -70,19 +70,27 @@ function Aside() {
 			<div className="flex gap-8 sm:gap-4 mb-4 mt-4">
 				<img
 					src={HTMLLogo}
+					alt="Logo HTML"
+					title="HTML"
 					className="w-6 transition-transform duration-500 ease-in-out hover:scale-125"
 				/>
 				<img
 					src={CSSLogo}
+					alt="Logo CSS"
+					title="CSS"
 					className="w-6 transition-transform duration-500 ease-in-out hover:scale-125"
 				/>
 				<img
 					src={JSLogo}
+					alt="Logo JavaScript"
+					title="JavaScript"
 					className="w-6 transition-transform duration-500 ease-in-out hover:scale-125"
 				/>
 
 				<img
 					src={ReactLogo}
+					alt="Logo React"
+					title="React"
 					className="w-7 relative right-1 transition-transform duration-500 ease-in-out hover:scale-125"
 				/>
 			</div>
