@@ -12,10 +12,11 @@ import Aside from "@/components/Aside/Aside";
 import focusTimerImg from "@/assets/focusTimer.png";
 import foodExplorerImg from "@/assets/foodExplorer.png";
 import gitFavImg from "@/assets/gitFav.png";
+import igniteTeamsImg from "@/assets/igniteTeams.png";
 import imcImg from "@/assets/imc.png";
+import imHereImg from "@/assets/imHere.png";
+import myPortfolioImg from "@/assets/myPortfolio.png";
 import nextNoteImg from "@/assets/nextNote.png";
-import myPortfolioImg from "@/assets/myPortfolio.png"
-import imHereImg from "@/assets/imHere.png"
 
 export function Projects() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -27,7 +28,7 @@ export function Projects() {
 			id: 1,
 			title: "Portfólio",
 			description:
-				"Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end.",
+				"Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end. Clique para saber mais...",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/My-Portfolio",
 			image: myPortfolioImg,
@@ -36,7 +37,7 @@ export function Projects() {
 			id: 2,
 			title: "Food Explorer",
 			description:
-				"Este projeto consiste em desenvolver um menu interativo de ponta a ponta, ou seja, do Front-End ao Back-End onde terá duas personas que serão o Admin e Usuário.",
+				"Este projeto consiste em desenvolver um menu interativo de ponta a ponta, onde terá duas personas que serão o Admin e Usuário. Clique para saber mais...",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/FoodExplorer-Front-end",
 			image: foodExplorerImg,
@@ -45,7 +46,7 @@ export function Projects() {
 			id: 3,
 			title: "Git Fav",
 			description:
-				"Essa aplicação consiste em pesquisar por um usuário no GitHub e adicioná-lo como usuário favorito.",
+				"Essa aplicação consiste em pesquisar por um usuário no GitHub e adicioná-lo como usuário favorito. Clique para saber mais...",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/Git-Fav",
 			image: gitFavImg,
@@ -54,7 +55,7 @@ export function Projects() {
 			id: 4,
 			title: "Next Note",
 			description:
-				"A aplicação permite aos usuários adicionar notas de forma fácil e intuitiva, seja digitando diretamente ou gravando uma nota em áudio que será convertida automaticamente para texto.",
+				"A aplicação permite adicionar notas de forma fácil, digitando ou gravando áudio que será automaticamente convertido em texto. Clique para saber mais…",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/next-note",
 			image: nextNoteImg,
@@ -63,7 +64,7 @@ export function Projects() {
 			id: 5,
 			title: "Focus Timer",
 			description:
-				"Este projeto consiste em desenvolver um temporizador e alternar entre o tema light e dark mode.",
+				"Este projeto consiste em desenvolver um temporizador e alternar entre o tema light e dark mode. Clique para saber mais...",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/FocusTimer-2.0",
 			image: focusTimerImg,
@@ -72,7 +73,7 @@ export function Projects() {
 			id: 6,
 			title: "Calculadora de IMC",
 			description:
-				"Esse projeto consiste em fazer o cálculo simples de IMC.",
+				"Esse projeto consiste em fazer o cálculo simples de IMC. Clique para saber mais...",
 			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/Calculadora-de-IMC",
 			image: imcImg,
@@ -81,10 +82,19 @@ export function Projects() {
 			id: 7,
 			title: "Im Here",
 			description:
-				"Esta é uma aplicação mobile que permite adicionar e remover participantes de eventos como treinamentos, palestras ou workshops.",
+				"Esta é uma aplicação mobile que permite adicionar e remover participantes de eventos como treinamentos, palestras ou workshops. Clique para saber mais...",
 			category: "mobileApp",
 			href: "https://github.com/wiltonmartinsdev/im-here",
 			image: imHereImg,
+		},
+		{
+			id: 8,
+			title: "Ignite Teams",
+			description:
+				"Ignite Teams é uma aplicação mobile desenvolvida com o objetivo de ajudar a organizar pessoas que se reúnem para jogar em turmas. Clique para saber mais...",
+			category: "mobileApp",
+			href: "https://github.com/wiltonmartinsdev/ignite-teams",
+			image: igniteTeamsImg,
 		},
 	];
 
