@@ -14,6 +14,7 @@ import foodExplorerImg from "@/assets/foodExplorer.png";
 import gitFavImg from "@/assets/gitFav.png";
 import imcImg from "@/assets/imc.png";
 import nextNoteImg from "@/assets/nextNote.png";
+import myPortfolioImg from "@/assets/myPortfolio.png"
 
 export function Projects() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -23,6 +24,15 @@ export function Projects() {
 	const projects = [
 		{
 			id: 1,
+			title: "Portfólio",
+			description:
+				"Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end.",
+			category: "webApp",
+			href: "https://github.com/wiltonmartinsdev/My-Portfolio",
+			image: myPortfolioImg,
+		},
+		{
+			id: 2,
 			title: "Food Explorer",
 			description:
 				"Este projeto consiste em desenvolver um menu interativo de ponta a ponta, ou seja, do Front-End ao Back-End onde terá duas personas que serão o Admin e Usuário.",
@@ -31,7 +41,7 @@ export function Projects() {
 			image: foodExplorerImg,
 		},
 		{
-			id: 2,
+			id: 3,
 			title: "Git Fav",
 			description:
 				"Essa aplicação consiste em pesquisar por um usuário no GitHub e adicioná-lo como usuário favorito.",
@@ -40,7 +50,7 @@ export function Projects() {
 			image: gitFavImg,
 		},
 		{
-			id: 3,
+			id: 4,
 			title: "Next Note",
 			description:
 				"A aplicação permite aos usuários adicionar notas de forma fácil e intuitiva, seja digitando diretamente ou gravando uma nota em áudio que será convertida automaticamente para texto.",
@@ -49,7 +59,7 @@ export function Projects() {
 			image: nextNoteImg,
 		},
 		{
-			id: 4,
+			id: 5,
 			title: "Focus Timer",
 			description:
 				"Este projeto consiste em desenvolver um temporizador e alternar entre o tema light e dark mode.",
@@ -58,7 +68,7 @@ export function Projects() {
 			image: focusTimerImg,
 		},
 		{
-			id: 5,
+			id: 6,
 			title: "Calculadora de IMC",
 			description:
 				"Esse projeto consiste em fazer o cálculo simples de IMC.",

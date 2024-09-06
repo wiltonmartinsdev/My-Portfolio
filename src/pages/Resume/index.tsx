@@ -87,7 +87,7 @@ export function Resume() {
 							<ul className="mt-2">
 								<li>
 									Em andamento - Centro Universitário
-									Internacional - UNINTER
+									Internacional / UNINTER
 								</li>
 							</ul>
 						</li>
