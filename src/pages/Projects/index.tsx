@@ -15,6 +15,7 @@ import gitFavImg from "@/assets/gitFav.png";
 import imcImg from "@/assets/imc.png";
 import nextNoteImg from "@/assets/nextNote.png";
 import myPortfolioImg from "@/assets/myPortfolio.png"
+import imHereImg from "@/assets/imHere.png"
 
 export function Projects() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -54,7 +55,7 @@ export function Projects() {
 			title: "Next Note",
 			description:
 				"A aplicação permite aos usuários adicionar notas de forma fácil e intuitiva, seja digitando diretamente ou gravando uma nota em áudio que será convertida automaticamente para texto.",
-			category: "mobileApp",
+			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/next-note",
 			image: nextNoteImg,
 		},
@@ -72,9 +73,18 @@ export function Projects() {
 			title: "Calculadora de IMC",
 			description:
 				"Esse projeto consiste em fazer o cálculo simples de IMC.",
-			category: "mobileApp",
+			category: "webApp",
 			href: "https://github.com/wiltonmartinsdev/Calculadora-de-IMC",
 			image: imcImg,
+		},
+		{
+			id: 7,
+			title: "Im Here",
+			description:
+				"Esta é uma aplicação mobile que permite adicionar e remover participantes de eventos como treinamentos, palestras ou workshops.",
+			category: "mobileApp",
+			href: "https://github.com/wiltonmartinsdev/im-here",
+			image: imHereImg,
 		},
 	];
 
