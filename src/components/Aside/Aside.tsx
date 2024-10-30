@@ -1,5 +1,4 @@
 import {
-	DeviceMobile,
 	EnvelopeSimple,
 	GithubLogo,
 	LinkedinLogo,
@@ -14,6 +13,7 @@ import HTMLLogo from "@/assets/htmlLogo.png";
 import JSLogo from "@/assets/jsLogo.png";
 import profileImage from "@/assets/perfil.png";
 import ReactLogo from "@/assets/reactLogo.png";
+import WhatsAppIcon from "@/assets/whatsAppIcon.svg";
 
 function Aside() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -98,14 +98,16 @@ function Aside() {
 			{(isOpen || isLargeScreen) && (
 				<div className="w-72 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2 lg:pl-5 lg:w-60">
 					<div className="flex items-center gap-2">
-						<DeviceMobile
-							size={24}
-							color="#ea580c"
+						<img
+							src={WhatsAppIcon}
+							alt=""
 						/>
 						<div className="text-left text-xs">
 							<a
 								className="hover:text-orange-600"
-								href="tel:+55 91 98250-4940">
+								href="https://wa.me/+5591982504940"
+								target="_blank"
+								rel="noopener noreferrer">
 								(91) 98250-4940
 							</a>
 						</div>
@@ -119,7 +121,8 @@ function Aside() {
 						<div className="text-left text-xs">
 							<a
 								className="hover:text-orange-600"
-								href="mailto:wiltonliramartins@icloud.com">
+								href="mailto:wiltonliramartins@icloud.com"
+								rel="noopener noreferrer">
 								wiltonliramartins@icloud.com
 							</a>
 						</div>
@@ -134,7 +137,8 @@ function Aside() {
 							<a
 								className="hover:text-orange-600"
 								href="https://github.com/wiltonmartinsdev"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								GitHub
 							</a>
 						</div>
@@ -149,7 +153,8 @@ function Aside() {
 							<a
 								className="hover:text-orange-600"
 								href="https://www.linkedin.com/in/wiltonliramartins"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								LinkedIn
 							</a>
 						</div>
