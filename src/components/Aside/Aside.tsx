@@ -20,7 +20,7 @@ function Aside() {
 		window.innerWidth >= 1024
 	);
 
-	// Atualiza o estado quando o tamanho da tela mudar
+	// Update state when screen size changes
 	useEffect(() => {
 		const handleResize = () => {
 			setIsLargeScreen(window.innerWidth >= 1024);

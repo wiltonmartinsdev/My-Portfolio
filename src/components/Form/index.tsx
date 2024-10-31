@@ -97,14 +97,15 @@ export function ContactForm() {
 			);
 			reset();
 		} catch (error) {
-			// Verifica se o erro possui uma propriedade 'text' e a exibe
+
+			// Checks if the error has a 'text' property and displays it.
 			if (error instanceof Error) {
 				console.log("Email sending error:", error.message);
 				toast.error(
 					"Ops! Houve um contratempo no servidor ao processar sua mensagem. Por favor, tente novamente em alguns segundos."
 				);
 			} else {
-				// Se o erro não for uma instância de Error, apenas exibe o erro como está
+				// If the error is not an instance of Error, just display the error as is.
 				console.log("Email sending error:", error);
 				toast.error(
 					"Ops! Houve um contratempo no servidor ao processar sua mensagem. Por favor, tente novamente em alguns segundos."
