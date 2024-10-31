@@ -34,7 +34,7 @@ export function AboutMe() {
 							programação e estou em busca de oportunidades como
 							Desenvolvedor Júnior, meu foco é utilizar minhas
 							habilidades técnicas em {""}
-							<span className="text-orange-600">
+							<span className="font-roboto-flex font-black italic text-orange-600">
 								HTML, CSS, JavaScript, TypeScript e React
 							</span>{" "}
 							para impactar positivamente a vida das pessoas
