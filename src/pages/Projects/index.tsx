@@ -26,41 +26,41 @@ export function Projects() {
 	const [selectedCategory, setSelectedCategory] = useState("all");
 
 	const projects = [
-        {
+		{
 			id: 1,
-			title: "Energia Pura Internacional",
+			title: "Ignite Teams",
 			description:
-				"Este é um projeto pessoal desenvolvido para o grupo de Capoeira Energia Pura do qual faço parte. Clique para saber mais...",
-			category: "webApp",
-			href: "https://capoeiraenergiapura.vercel.app",
-			image: ThumbnailEP,
+				"Ignite Teams é uma aplicação mobile desenvolvida com o objetivo de ajudar a organizar pessoas que se reúnem para jogar em turmas. Clique para saber mais...",
+			category: "mobileApp",
+			href: "https://github.com/wiltonmartinsdev/ignite-teams",
+			image: igniteTeamsImg,
 		},
 		{
 			id: 2,
-			title: "Portfólio",
+			title: "Im Here",
 			description:
-				"Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end. Clique para saber mais...",
-			category: "webApp",
-			href: "https://github.com/wiltonmartinsdev/My-Portfolio",
-			image: myPortfolioImg,
+				"Esta é uma aplicação mobile que permite adicionar e remover participantes de eventos como treinamentos, palestras ou workshops. Clique para saber mais...",
+			category: "mobileApp",
+			href: "https://github.com/wiltonmartinsdev/im-here",
+			image: imHereImg,
 		},
 		{
 			id: 3,
-			title: "Food Explorer",
+			title: "Calculadora de IMC",
 			description:
-				"Este projeto consiste em desenvolver um menu interativo de ponta a ponta, onde terá duas personas que serão o Admin e Usuário. Clique para saber mais...",
+				"Esse projeto consiste em fazer o cálculo simples de IMC. Clique para saber mais...",
 			category: "webApp",
-			href: "https://github.com/wiltonmartinsdev/FoodExplorer-Front-end",
-			image: foodExplorerImg,
+			href: "https://github.com/wiltonmartinsdev/Calculadora-de-IMC",
+			image: imcImg,
 		},
 		{
 			id: 4,
-			title: "Git Fav",
+			title: "Focus Timer",
 			description:
-				"Essa aplicação consiste em pesquisar por um usuário no GitHub e adicioná-lo como usuário favorito. Clique para saber mais...",
+				"Este projeto consiste em desenvolver um temporizador e alternar entre o tema light e dark mode. Clique para saber mais...",
 			category: "webApp",
-			href: "https://github.com/wiltonmartinsdev/Git-Fav",
-			image: gitFavImg,
+			href: "https://github.com/wiltonmartinsdev/FocusTimer-2.0",
+			image: focusTimerImg,
 		},
 		{
 			id: 5,
@@ -73,48 +73,48 @@ export function Projects() {
 		},
 		{
 			id: 6,
-			title: "Focus Timer",
+			title: "Git Fav",
 			description:
-				"Este projeto consiste em desenvolver um temporizador e alternar entre o tema light e dark mode. Clique para saber mais...",
+				"Essa aplicação consiste em pesquisar por um usuário no GitHub e adicioná-lo como usuário favorito. Clique para saber mais...",
 			category: "webApp",
-			href: "https://github.com/wiltonmartinsdev/FocusTimer-2.0",
-			image: focusTimerImg,
+			href: "https://github.com/wiltonmartinsdev/Git-Fav",
+			image: gitFavImg,
 		},
 		{
 			id: 7,
-			title: "Calculadora de IMC",
+			title: "Portfólio",
 			description:
-				"Esse projeto consiste em fazer o cálculo simples de IMC. Clique para saber mais...",
+				"Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end. Clique para saber mais...",
 			category: "webApp",
-			href: "https://github.com/wiltonmartinsdev/Calculadora-de-IMC",
-			image: imcImg,
+			href: "https://github.com/wiltonmartinsdev/My-Portfolio",
+			image: myPortfolioImg,
 		},
 		{
 			id: 8,
-			title: "Im Here",
+			title: "Food Explorer",
 			description:
-				"Esta é uma aplicação mobile que permite adicionar e remover participantes de eventos como treinamentos, palestras ou workshops. Clique para saber mais...",
-			category: "mobileApp",
-			href: "https://github.com/wiltonmartinsdev/im-here",
-			image: imHereImg,
+				"Este projeto consiste em desenvolver um menu interativo de ponta a ponta, onde terá duas personas que serão o Admin e Usuário. Clique para saber mais...",
+			category: "webApp",
+			href: "https://github.com/wiltonmartinsdev/FoodExplorer-Front-end",
+			image: foodExplorerImg,
 		},
 		{
 			id: 9,
-			title: "Ignite Teams",
+			title: "Energia Pura Internacional",
 			description:
-				"Ignite Teams é uma aplicação mobile desenvolvida com o objetivo de ajudar a organizar pessoas que se reúnem para jogar em turmas. Clique para saber mais...",
-			category: "mobileApp",
-			href: "https://github.com/wiltonmartinsdev/ignite-teams",
-			image: igniteTeamsImg,
+				"Este é um projeto pessoal desenvolvido para o grupo de Capoeira Energia Pura do qual faço parte. Clique para saber mais...",
+			category: "webApp",
+			href: "https://capoeiraenergiapura.vercel.app",
+			image: ThumbnailEP,
 		},
 	];
 
 	const filteredProjects =
 		selectedCategory === "all"
-			? projects
-			: projects.filter(
-					(project) => project.category === selectedCategory
-			  );
+			? projects.reverse()
+			: projects
+					.filter((project) => project.category === selectedCategory)
+					.reverse();
 
 	return (
 		<>
