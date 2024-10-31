@@ -1,7 +1,8 @@
-import { Code, Student } from "@phosphor-icons/react";
 import { Footer } from "@/components/Footer";
 import { NavigationMenu } from "@/components/NavigationMenu";
 import Aside from "@/components/Aside/Aside";
+import CodeIcon from "@/assets/codeIcon.svg";
+import StudentIcon from "@/assets/studentIcon.svg";
 
 export function Resume() {
 	return (
@@ -17,9 +18,9 @@ export function Resume() {
 					</h1>
 
 					<div className="flex items-center gap-2 mb-4">
-						<Student
-							size={32}
-							color="#ea580c"
+						<img
+							src={StudentIcon}
+							alt=""
 						/>
 
 						<p className="font-roboto-flex font-black text-orange-600 text-xl">
@@ -47,9 +48,9 @@ export function Resume() {
 					</ol>
 
 					<div className="flex items-center gap-2 mb-4">
-						<Code
-							size={32}
-							color="#ea580c"
+						<img
+							src={CodeIcon}
+							alt=""
 						/>
 
 						<p className="font-roboto-flex font-black text-orange-600 text-xl">

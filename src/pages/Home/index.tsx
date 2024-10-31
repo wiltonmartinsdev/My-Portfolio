@@ -4,12 +4,11 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { Laptop } from "lucide-react";
-
-import { DeviceMobile } from "@phosphor-icons/react";
 import { Footer } from "@/components/Footer";
 import { NavigationMenu } from "@/components/NavigationMenu";
 import Aside from "@/components/Aside/Aside";
+import LaptopIcon from "@/assets/laptopIcon.svg";
+import MobileDeviceIcon from "@/assets/mobileDeviceIcon.svg";
 
 export function AboutMe() {
 	return (
@@ -73,8 +72,11 @@ export function AboutMe() {
 
 					<Card className="border border-neutral-700 mb-4">
 						<CardHeader>
-							<CardTitle className="font-roboto-flex font-black flex gap-1 items-center justify-center">
-								<Laptop size={24} />
+							<CardTitle className="font-roboto-flex font-black flex gap-2 items-center justify-center">
+								<img
+									src={LaptopIcon}
+									alt=""
+								/>
 								Desenvolvimento Web
 							</CardTitle>
 							<CardDescription>
@@ -88,8 +90,11 @@ export function AboutMe() {
 
 					<Card className="border border-neutral-700">
 						<CardHeader>
-							<CardTitle className="font-roboto-flex font-black flex gap-1 items-center justify-center text-base xsm:text-lg">
-								<DeviceMobile size={24} />
+							<CardTitle className="font-roboto-flex font-black flex gap-2 items-center justify-center text-base xsm:text-lg">
+								<img
+									src={MobileDeviceIcon}
+									alt=""
+								/>
 								Desenvolvimento Mobile
 							</CardTitle>
 							<CardDescription>
