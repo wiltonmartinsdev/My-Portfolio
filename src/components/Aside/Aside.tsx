@@ -47,7 +47,8 @@ function Aside() {
 				/>
 			</span>
 
-			<div className="flex items-center gap-3 mb-4 lg:flex lg:flex-col">
+			{/* Profile section with user image and information */}
+			<section className="flex items-center gap-3 mb-4 lg:flex lg:flex-col">
 				<img
 					className="border border-neutral-600 w-20 bg-transparent rounded-2xl hover:border-2 hover:border-orange-600 lg:w-32"
 					src={profileImage}
@@ -63,9 +64,10 @@ function Aside() {
 						Desenvolvedor Front-end
 					</Badge>
 				</div>
-			</div>
+			</section>
 
-			<div className="flex gap-8 sm:gap-4 mb-4 mt-4">
+			{/* Technology logos section */}
+			<section className="flex gap-8 sm:gap-4 mb-4 mt-4">
 				<img
 					src={HTMLLogo}
 					alt="Logo HTML"
@@ -91,10 +93,11 @@ function Aside() {
 					title="React"
 					className="w-7 relative right-1 transition-transform duration-500 ease-in-out hover:scale-125"
 				/>
-			</div>
+			</section>
 
+			{/* Section with contact information and navigation links */}
 			{(isOpen || isLargeScreen) && (
-				<div className="w-72 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2 lg:pl-5 lg:w-60">
+				<section className="w-72 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2 lg:pl-5 lg:w-60">
 					<div className="flex items-center gap-2">
 						<img
 							src={WhatsAppIcon}
@@ -206,7 +209,7 @@ function Aside() {
 							</li>
 						</ul>
 					</nav>
-				</div>
+				</section>
 			)}
 		</aside>
 	);
