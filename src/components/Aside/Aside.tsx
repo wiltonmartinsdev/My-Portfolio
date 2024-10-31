@@ -1,16 +1,14 @@
-import {
-	EnvelopeSimple,
-	GithubLogo,
-	LinkedinLogo,
-} from "@phosphor-icons/react";
 import { Divide as Hamburger } from "hamburger-react";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import { Badge } from "@/components/ui/badge";
 import CSSLogo from "@/assets/cssLogo.png";
+import EmailIcon from "@/assets/emailIcon.svg";
+import GitHubIcon from "@/assets/gitHubIcon.svg";
 import HTMLLogo from "@/assets/htmlLogo.png";
 import JSLogo from "@/assets/jsLogo.png";
+import LinkedinIcon from "@/assets/linkedinIcon.svg";
 import profileImage from "@/assets/perfil.png";
 import ReactLogo from "@/assets/reactLogo.png";
 import WhatsAppIcon from "@/assets/whatsAppIcon.svg";
@@ -114,9 +112,9 @@ function Aside() {
 					</div>
 
 					<div className="flex items-center gap-2">
-						<EnvelopeSimple
-							size={24}
-							color="#ea580c"
+						<img
+							src={EmailIcon}
+							alt=""
 						/>
 						<div className="text-left text-xs">
 							<a
@@ -129,9 +127,9 @@ function Aside() {
 					</div>
 
 					<div className="flex items-center gap-2">
-						<GithubLogo
-							size={24}
-							color="#ea580c"
+						<img
+							src={GitHubIcon}
+							alt=""
 						/>
 						<div className="text-left text-xs">
 							<a
@@ -145,9 +143,9 @@ function Aside() {
 					</div>
 
 					<div className="flex items-center gap-2">
-						<LinkedinLogo
-							size={24}
-							color="#ea580c"
+						<img
+							src={LinkedinIcon}
+							alt=""
 						/>
 						<div className="text-left text-xs">
 							<a
