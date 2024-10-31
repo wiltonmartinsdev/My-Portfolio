@@ -131,7 +131,7 @@ function Aside() {
 						</div>
 					</div>
 
-					<div className="flex items-center gap-2 pl-1">
+					<div className="flex items-center gap-2 pl-[2px]">
 						<img
 							src={GitHubIcon}
 							alt=""
@@ -147,7 +147,7 @@ function Aside() {
 						</div>
 					</div>
 
-					<div className="flex items-center gap-2 pl-1">
+					<div className="flex items-center gap-2 pl-[2px]">
 						<img
 							src={LinkedinIcon}
 							alt=""
