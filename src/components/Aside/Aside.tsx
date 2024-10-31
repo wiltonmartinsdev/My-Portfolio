@@ -34,7 +34,7 @@ function Aside() {
 
 	return (
 		<aside
-			className={`border border-neutral-700 flex flex-col items-center justify-center mx-auto bg-neutral-800 overflow-hidden transition-[height] duration-1000 ease-in-out ${
+			className={`font-roboto-flex font-black border border-neutral-700 flex flex-col items-center justify-center mx-auto bg-neutral-800 overflow-hidden transition-[height] duration-1000 ease-in-out ${
 				isOpen || isLargeScreen ? "h-[420px] lg:h-[560px]" : "h-56"
 			} rounded-2xl mb-3 lg:w-72 lg:mx-0 lg:sticky lg:top-16`}>
 			<span className="w-full flex justify-end lg:hidden">
@@ -159,7 +159,7 @@ function Aside() {
 					</div>
 
 					<nav>
-						<ul className="flex justify-center gap-3 text-sm lg:hidden">
+						<ul className="w-72 flex justify-center gap-3 text-sm lg:hidden">
 							<li>
 								<NavLink
 									className={({ isActive }) =>
