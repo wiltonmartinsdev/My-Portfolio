@@ -5,10 +5,10 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { Laptop } from "lucide-react";
-import { NavLink } from "react-router-dom";
 
 import { DeviceMobile } from "@phosphor-icons/react";
 import { Footer } from "@/components/Footer";
+import { NavigationMenu } from "@/components/NavigationMenu";
 import Aside from "@/components/Aside/Aside";
 
 export function AboutMe() {
@@ -18,56 +18,9 @@ export function AboutMe() {
 				<Aside />
 
 				<main className="border border-neutral-700 p-5 rounded-2xl bg-neutral-800 lg:flex lg:flex-col lg:w-[900px] lg:pt-0">
-					<nav className="hidden lg:flex lg:justify-end lg:h-16 lg:relative left-5 bottom-px ">
-						<ul className="flex items-center gap-4 bg-neutral-700 px-8 border-collapse rounded-tr-2xl rounded-bl-2xl">
-							<li>
-								<NavLink
-									className={({ isActive }) =>
-										isActive
-											? "text-orange-600"
-											: "text-white"
-									}
-									to="/">
-									Sobre mim
-								</NavLink>
-							</li>
-							<li>
-								<NavLink
-									className={({ isActive }) =>
-										isActive
-											? "text-orange-600"
-											: "text-white"
-									}
-									to="/resume">
-									Resumo
-								</NavLink>
-							</li>
-							<li>
-								<NavLink
-									className={({ isActive }) =>
-										isActive
-											? "text-orange-600"
-											: "text-white"
-									}
-									to="/projects">
-									Projetos
-								</NavLink>
-							</li>
-							<li>
-								<NavLink
-									className={({ isActive }) =>
-										isActive
-											? "text-orange-600"
-											: "text-white"
-									}
-									to="/contact">
-									Contato
-								</NavLink>
-							</li>
-						</ul>
-					</nav>
+					<NavigationMenu />
 
-					<h1 className="text-center sm:text-left text-orange-600 font-semibold mb-4 text-3xl">
+					<h1 className="font-roboto-flex font-black italic text-center sm:text-left text-orange-600 mb-4 text-3xl">
 						Sobre mim
 					</h1>
 
@@ -114,13 +67,13 @@ export function AboutMe() {
 						</li>
 					</ul>
 
-					<h2 className="text-orange-600 font-semibold mb-4 text-xl">
+					<h2 className="font-roboto-flex font-black text-orange-600 mb-4 text-xl">
 						O que estou fazendo...
 					</h2>
 
 					<Card className="border border-neutral-700 mb-4">
 						<CardHeader>
-							<CardTitle className="flex gap-1 items-center justify-center">
+							<CardTitle className="font-roboto-flex font-black flex gap-1 items-center justify-center">
 								<Laptop size={24} />
 								Desenvolvimento Web
 							</CardTitle>
@@ -135,7 +88,7 @@ export function AboutMe() {
 
 					<Card className="border border-neutral-700">
 						<CardHeader>
-							<CardTitle className="flex gap-1 items-center justify-center text-base xsm:text-lg">
+							<CardTitle className="font-roboto-flex font-black flex gap-1 items-center justify-center text-base xsm:text-lg">
 								<DeviceMobile size={24} />
 								Desenvolvimento Mobile
 							</CardTitle>

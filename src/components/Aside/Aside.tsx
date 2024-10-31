@@ -55,7 +55,7 @@ function Aside() {
 				/>
 
 				<div>
-					<p className="text-white text-center text-lg hover:text-orange-600 cursor-default">
+					<p className="font-roboto-flex font-black text-white text-center text-lg hover:text-orange-600 cursor-default">
 						Wilton Lira Martins
 					</p>
 
