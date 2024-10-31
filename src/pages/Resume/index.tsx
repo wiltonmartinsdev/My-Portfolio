@@ -17,57 +17,63 @@ export function Resume() {
 						Resumo
 					</h1>
 
-					<div className="flex items-center gap-2 mb-4">
-						<img
-							src={StudentIcon}
-							alt=""
-						/>
+					{/* Section displaying educational */}
+					<section>
+						<div className="flex items-center gap-2 mb-4">
+							<img
+								src={StudentIcon}
+								alt=""
+							/>
 
-						<p className="font-roboto-flex font-black text-orange-600 text-xl">
-							Formação
-						</p>
-					</div>
+							<p className="font-roboto-flex font-black text-orange-600 text-xl">
+								Formação
+							</p>
+						</div>
 
-					<ol className="relative left-5 list-disc text-white custom-bullet mb-4">
-						<li className="mb-6">
-							Programa de Formação Explorer - Desenvolvimento Web
-							FullStack
-							<ul className="mt-2">
-								<li>2022 - 2023 / RocketSeat</li>
-							</ul>
-						</li>
-						<li>
-							Análise e Desenvolvimento de Sistemas
-							<ul className="mt-2">
-								<li>
-									Em andamento - Centro Universitário
-									Internacional / UNINTER
-								</li>
-							</ul>
-						</li>
-					</ol>
+						<ol className="relative left-5 list-disc text-white custom-bullet mb-4">
+							<li className="mb-6">
+								Programa de Formação Explorer - Desenvolvimento
+								Web FullStack
+								<ul className="mt-2">
+									<li>2022 - 2023 / RocketSeat</li>
+								</ul>
+							</li>
+							<li>
+								Análise e Desenvolvimento de Sistemas
+								<ul className="mt-2">
+									<li>
+										Em andamento - Centro Universitário
+										Internacional / UNINTER
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</section>
 
-					<div className="flex items-center gap-2 mb-4">
-						<img
-							src={CodeIcon}
-							alt=""
-						/>
+					{/* Section displaying technologies used */}
+					<section>
+						<div className="flex items-center gap-2 mb-4">
+							<img
+								src={CodeIcon}
+								alt=""
+							/>
 
-						<p className="font-roboto-flex font-black text-orange-600 text-xl">
-							Tecnologias
-						</p>
-					</div>
+							<p className="font-roboto-flex font-black text-orange-600 text-xl">
+								Tecnologias
+							</p>
+						</div>
 
-					<ol className="relative left-5 list-disc text-white custom-bullet">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>TypeScript</li>
-						<li>React</li>
-						<li>Styled-components</li>
-						<li>Tailwindcss</li>
-						<li>Git</li>
-					</ol>
+						<ol className="relative left-5 list-disc text-white custom-bullet">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>React</li>
+							<li>Styled-components</li>
+							<li>Tailwindcss</li>
+							<li>Git</li>
+						</ol>
+					</section>
 				</main>
 			</div>
 
