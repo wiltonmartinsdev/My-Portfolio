@@ -6,7 +6,6 @@ import {
 	SelectValue,
 } from "@/components/ui/select";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 import { Footer } from "@/components/Footer";
 import { NavigationMenu } from "@/components/NavigationMenu";
@@ -19,6 +18,7 @@ import imcImg from "@/assets/imc.png";
 import imHereImg from "@/assets/imHere.png";
 import myPortfolioImg from "@/assets/myPortfolio.png";
 import nextNoteImg from "@/assets/nextNote.png";
+import ThumbnailEP from "@/assets/thumbnail-Ep.png";
 
 export function Projects() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -26,8 +26,17 @@ export function Projects() {
 	const [selectedCategory, setSelectedCategory] = useState("all");
 
 	const projects = [
-		{
+        {
 			id: 1,
+			title: "Energia Pura Internacional",
+			description:
+				"Este é um projeto pessoal desenvolvido para o grupo de Capoeira Energia Pura do qual faço parte. Clique para saber mais...",
+			category: "webApp",
+			href: "https://capoeiraenergiapura.vercel.app",
+			image: ThumbnailEP,
+		},
+		{
+			id: 2,
 			title: "Portfólio",
 			description:
 				"Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end. Clique para saber mais...",
@@ -36,7 +45,7 @@ export function Projects() {
 			image: myPortfolioImg,
 		},
 		{
-			id: 2,
+			id: 3,
 			title: "Food Explorer",
 			description:
 				"Este projeto consiste em desenvolver um menu interativo de ponta a ponta, onde terá duas personas que serão o Admin e Usuário. Clique para saber mais...",
@@ -45,7 +54,7 @@ export function Projects() {
 			image: foodExplorerImg,
 		},
 		{
-			id: 3,
+			id: 4,
 			title: "Git Fav",
 			description:
 				"Essa aplicação consiste em pesquisar por um usuário no GitHub e adicioná-lo como usuário favorito. Clique para saber mais...",
@@ -54,7 +63,7 @@ export function Projects() {
 			image: gitFavImg,
 		},
 		{
-			id: 4,
+			id: 5,
 			title: "Next Note",
 			description:
 				"A aplicação permite adicionar notas de forma fácil, digitando ou gravando áudio que será automaticamente convertido em texto. Clique para saber mais…",
@@ -63,7 +72,7 @@ export function Projects() {
 			image: nextNoteImg,
 		},
 		{
-			id: 5,
+			id: 6,
 			title: "Focus Timer",
 			description:
 				"Este projeto consiste em desenvolver um temporizador e alternar entre o tema light e dark mode. Clique para saber mais...",
@@ -72,7 +81,7 @@ export function Projects() {
 			image: focusTimerImg,
 		},
 		{
-			id: 6,
+			id: 7,
 			title: "Calculadora de IMC",
 			description:
 				"Esse projeto consiste em fazer o cálculo simples de IMC. Clique para saber mais...",
@@ -81,7 +90,7 @@ export function Projects() {
 			image: imcImg,
 		},
 		{
-			id: 7,
+			id: 8,
 			title: "Im Here",
 			description:
 				"Esta é uma aplicação mobile que permite adicionar e remover participantes de eventos como treinamentos, palestras ou workshops. Clique para saber mais...",
@@ -90,7 +99,7 @@ export function Projects() {
 			image: imHereImg,
 		},
 		{
-			id: 8,
+			id: 9,
 			title: "Ignite Teams",
 			description:
 				"Ignite Teams é uma aplicação mobile desenvolvida com o objetivo de ajudar a organizar pessoas que se reúnem para jogar em turmas. Clique para saber mais...",
