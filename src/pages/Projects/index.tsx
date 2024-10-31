@@ -142,7 +142,8 @@ export function Projects() {
 						</SelectContent>
 					</Select>
 
-					<div
+					{/* This section dynamically displays a grid of project cards based on the selected category. */}
+					<section
 						className={`transition-all duration-600 ease-in-out ${
 							isDropdownOpen ? "mt-24" : "mt-0"
 						} py-6 grid justify-center gap-6 sm:grid-cols-2 sm:justify-items-center xl:grid-cols-3`}>
@@ -169,7 +170,7 @@ export function Projects() {
 								</div>
 							</a>
 						))}
-					</div>
+					</section>
 				</main>
 			</div>
 
