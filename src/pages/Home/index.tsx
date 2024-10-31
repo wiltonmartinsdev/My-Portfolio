@@ -82,7 +82,7 @@ export function AboutMe() {
 							Desenvolvedor Júnior, meu foco é utilizar minhas
 							habilidades técnicas em {""}
 							<span className="text-orange-600">
-								HTML, CSS, JavaScript e React
+								HTML, CSS, JavaScript, TypeScript e React
 							</span>{" "}
 							para impactar positivamente a vida das pessoas
 							através da tecnologia.

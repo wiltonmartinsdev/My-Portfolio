@@ -23,6 +23,10 @@ module.exports = {
 			xsm: { min: "425px" },
 			...defaultTheme.screens,
 		},
+        fontFamily: {
+			"roboto-flex": ["Roboto Flex", "sans-serif"],
+			roboto: ["Roboto", "sans-serif"],
+		},
 		extend: {
 			keyframes: {
 				"accordion-down": {
