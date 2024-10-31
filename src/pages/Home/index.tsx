@@ -8,6 +8,7 @@ import { Laptop } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 import { DeviceMobile } from "@phosphor-icons/react";
+import { Footer } from "@/components/Footer";
 import Aside from "@/components/Aside/Aside";
 
 export function AboutMe() {
@@ -97,12 +98,11 @@ export function AboutMe() {
 							estudos, sei que atingirei meus objetivos.
 						</li>
 						<li className="mb-4">
-							Desde meu primeiro contato com a
-							programação em 2019, minha paixão por essa área
-							cresceu exponencialmente. Atualmente, estou
-							aprimorando meus conhecimentos na Rocketseat, onde
-							tenho a oportunidade de me desenvolver
-							constantemente.
+							Desde meu primeiro contato com a programação em
+							2019, minha paixão por essa área cresceu
+							exponencialmente. Atualmente, estou aprimorando meus
+							conhecimentos na Rocketseat, onde tenho a
+							oportunidade de me desenvolver constantemente.
 						</li>
 						<li>
 							Estou entusiasmado para contribuir com projetos
@@ -152,17 +152,7 @@ export function AboutMe() {
 				</main>
 			</div>
 
-			<footer className="border border-neutral-700 bg-neutral-800 h-14 flex justify-center items-center rounded-t-2xl fixed bottom-0 left-0 right-0 z-10">
-				<div className="flex flex-col items-center justify-center gap-0.5">
-					<p className=" text-white hover:text-orange-600 text-xs cursor-default">
-						Desenvolvido por Wilton Lira Martins
-					</p>
-
-					<p className="text-white hover:text-orange-600 text-xs cursor-default">
-						Copyright &copy; 2024 - Todos os direitos reservados
-					</p>
-				</div>
-			</footer>
+			<Footer />
 		</>
 	);
 }
