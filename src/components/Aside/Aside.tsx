@@ -97,12 +97,13 @@ function Aside() {
 
 			{/* Section with contact information and navigation links */}
 			{(isOpen || isLargeScreen) && (
-				<section className="w-72 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2 lg:pl-5 lg:w-60">
-					<div className="flex items-center gap-2">
+				<section className="w-72 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2 lg:w-60">
+					<div className="flex items-center gap-2 pl-[2px]">
 						<img
 							src={WhatsAppIcon}
 							alt=""
 						/>
+
 						<div className="text-left text-xs">
 							<a
 								className="hover:text-orange-600"
@@ -119,6 +120,7 @@ function Aside() {
 							src={EmailIcon}
 							alt=""
 						/>
+
 						<div className="text-left text-xs">
 							<a
 								className="hover:text-orange-600"
@@ -129,7 +131,7 @@ function Aside() {
 						</div>
 					</div>
 
-					<div className="flex items-center gap-2">
+					<div className="flex items-center gap-2 pl-1">
 						<img
 							src={GitHubIcon}
 							alt=""
@@ -145,7 +147,7 @@ function Aside() {
 						</div>
 					</div>
 
-					<div className="flex items-center gap-2">
+					<div className="flex items-center gap-2 pl-1">
 						<img
 							src={LinkedinIcon}
 							alt=""
