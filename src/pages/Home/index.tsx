@@ -27,8 +27,9 @@ export function AboutMe() {
 						Olá, bem-vindo (a), ao meu portfólio!
 					</p>
 
-					<ul className="text-white mb-8">
-						<li className="mb-4">
+					{/* "About Me" section with a brief description of the developer, their passions, journey, and goals in programming. */}
+					<section className="text-white mb-8">
+						<p className="mb-4">
 							Sou um desenvolvedor apaixonado por tecnologia e
 							programação e estou em busca de oportunidades como
 							Desenvolvedor Júnior, meu foco é utilizar minhas
@@ -38,8 +39,8 @@ export function AboutMe() {
 							</span>{" "}
 							para impactar positivamente a vida das pessoas
 							através da tecnologia.
-						</li>
-						<li className="mb-4">
+						</p>
+						<p className="mb-4">
 							Programação para mim não é apenas um desejo
 							momentâneo, é o que quero para minha vida! Embora eu
 							esteja no começo da minha trajetória, me vejo
@@ -48,23 +49,23 @@ export function AboutMe() {
 							aprendi na programação é que nunca devemos desistir
 							e sempre persistir! Com a constância dos meus
 							estudos, sei que atingirei meus objetivos.
-						</li>
-						<li className="mb-4">
+						</p>
+						<p className="mb-4">
 							Desde meu primeiro contato com a programação em
 							2019, minha paixão por essa área cresceu
 							exponencialmente. Atualmente, estou aprimorando meus
 							conhecimentos na Rocketseat, onde tenho a
 							oportunidade de me desenvolver constantemente.
-						</li>
-						<li>
+						</p>
+						<p>
 							Estou entusiasmado para contribuir com projetos
 							desafiadores e aprender com profissionais
 							experientes. Se você está em busca de um Programador
 							Jr. dedicado, apaixonado por programação e pronto
 							para agregar valor à sua equipe, estou à disposição
 							para conectar e colaborar.
-						</li>
-					</ul>
+						</p>
+					</section>
 
 					<h2 className="font-roboto-flex font-black text-orange-600 mb-4 text-xl">
 						O que estou fazendo...
