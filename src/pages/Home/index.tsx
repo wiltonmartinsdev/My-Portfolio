@@ -53,9 +53,14 @@ export function AboutMe() {
 						<p className="mb-4">
 							Desde meu primeiro contato com a programação em
 							2019, minha paixão por essa área cresceu
-							exponencialmente. Atualmente, estou aprimorando meus
-							conhecimentos na Rocketseat, onde tenho a
-							oportunidade de me desenvolver constantemente.
+							exponencialmente. Concluí minha formação FullStack
+							na Rocketseat, onde adquiri conhecimentos sólidos
+							tanto em front-end quanto em back-end. Além disso,
+							continuo aprimorando meus conhecimentos na
+							Rocketseat, onde tenho a oportunidade de me
+							desenvolver constantemente, reforçando minhas
+							habilidades e me mantendo atualizado com as novas
+							tecnologias.
 						</p>
 						<p>
 							Estou entusiasmado para contribuir com projetos
