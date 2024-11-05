@@ -40,6 +40,21 @@ export function AboutMe() {
 							para impactar positivamente a vida das pessoas
 							através da tecnologia.
 						</p>
+
+						<p className="mb-4">
+							Desde meu primeiro contato com a programação em
+							2019, minha paixão por essa área cresceu
+							exponencialmente. Concluí minha formação FullStack
+							na Rocketseat, em 2023, onde adquiri conhecimentos
+							sólidos tanto em front-end quanto em back-end.
+							Embora eu esteja direcionado a oportunidades de
+							front-end, minha formação FullStack me proporciona
+							uma visão ampla de desenvolvimento, onde possuo
+							também habilidades em Node.js e banco de dados
+							SQLite que podem agregar valor ao trabalho em
+							equipe.
+						</p>
+
 						<p className="mb-4">
 							Programação para mim não é apenas um desejo
 							momentâneo, é o que quero para minha vida! Embora eu
@@ -50,25 +65,15 @@ export function AboutMe() {
 							e sempre persistir! Com a constância dos meus
 							estudos, sei que atingirei meus objetivos.
 						</p>
-						<p className="mb-4">
-							Desde meu primeiro contato com a programação em
-							2019, minha paixão por essa área cresceu
-							exponencialmente. Concluí minha formação FullStack
-							na Rocketseat, onde adquiri conhecimentos sólidos
-							tanto em front-end quanto em back-end. Além disso,
-							continuo aprimorando meus conhecimentos na
-							Rocketseat, onde tenho a oportunidade de me
-							desenvolver constantemente, reforçando minhas
-							habilidades e me mantendo atualizado com as novas
-							tecnologias.
-						</p>
+
 						<p>
 							Estou entusiasmado para contribuir com projetos
 							desafiadores e aprender com profissionais
-							experientes. Se você está em busca de um Programador
-							Jr. dedicado, apaixonado por programação e pronto
-							para agregar valor à sua equipe, estou à disposição
-							para conectar e colaborar.
+							experientes. Se você está em busca de um
+							Desenvolvedor Júnior dedicado, apaixonado por
+							programação e pronto para agregar valor à sua
+							equipe, estou à disposição para conectar e
+							colaborar.
 						</p>
 					</section>
 
