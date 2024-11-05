@@ -32,7 +32,7 @@ export function AboutMe() {
 						<p className="mb-4">
 							Sou um desenvolvedor apaixonado por tecnologia e
 							programação e estou em busca de oportunidades como
-							Desenvolvedor Júnior, meu foco é utilizar minhas
+							Desenvolvedor Web Júnior, meu foco é utilizar minhas
 							habilidades técnicas em {""}
 							<span className="font-roboto-flex font-black italic text-orange-600">
 								HTML, CSS, JavaScript, TypeScript e React
