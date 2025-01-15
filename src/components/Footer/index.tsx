@@ -7,7 +7,7 @@ export function Footer() {
 					</p>
 
 					<p className="text-white hover:text-orange-600 text-xs cursor-default">
-						Copyright &copy; 2024 - Todos os direitos reservados
+						Copyright &copy; 2025 - Todos os direitos reservados
 					</p>
 				</div>
 			</footer>
