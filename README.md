@@ -20,7 +20,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 ## 🛠️ Instalação
 
 - Clone o repositório, com o comando abaixo, no seu terminal:
-  - Utizando HTTPS `https://github.com/wiltonmartinsdev/My-Portfolio.git` ou
+  - Utilizando HTTPS `https://github.com/wiltonmartinsdev/My-Portfolio.git` ou
   - Utilizando SSH: `git@github.com:wiltonmartinsdev/My-Portfolio.git`.
 - Acesse o diretório do projeto: `cd My-Portfolio`.
 - Certifique-se de ter o Node.js e o NPM instalados em sua máquina e depois digite no terminal o comando abaixo para instalar todas as dependências necessárias do projeto.
