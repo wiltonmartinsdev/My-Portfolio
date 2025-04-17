@@ -72,6 +72,10 @@ export function AboutMe() {
 							meus estudos, sei que atingirei meus objetivos.
 						</p>
 
+						<p className="mb-4">
+                        Além das habilidades técnicas, trago comigo comunicação eficaz, capacidade de trabalhar em equipe e adaptabilidade para enfrentar novos desafios e tecnologias.
+						</p>
+
 						<p>
 							Estou entusiasmado para contribuir com projetos
 							desafiadores e aprender com profissionais
