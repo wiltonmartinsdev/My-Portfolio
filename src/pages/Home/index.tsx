@@ -73,7 +73,7 @@ export function AboutMe() {
 						</p>
 
 						<p className="mb-4">
-                        Além das habilidades técnicas, trago comigo comunicação eficaz, capacidade de trabalhar em equipe e adaptabilidade para enfrentar novos desafios e tecnologias.
+                        Além das habilidades técnicas, trago comigo <span className="font-roboto-flex font-black italic text-orange-600">comunicação eficaz, capacidade de trabalhar em equipe e adaptabilidade</span> para enfrentar novos desafios e tecnologias. Acredito que essas competências são essenciais para desenvolver soluções que realmente atendam às necessidades dos usuários e para construir relacionamentos produtivos em ambientes colaborativos.
 						</p>
 
 						<p>
