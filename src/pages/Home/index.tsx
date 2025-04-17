@@ -32,13 +32,18 @@ export function AboutMe() {
 						<p className="mb-4">
 							Sou um desenvolvedor apaixonado por tecnologia e
 							programação e estou em busca de oportunidades como
-							Desenvolvedor Web Júnior, meu foco é utilizar minhas
-							habilidades técnicas em {""}
+							Desenvolvedor FullStack Júnior, meu foco é utilizar
+							minhas habilidades técnicas tanto em Front-end: {""}
 							<span className="font-roboto-flex font-black italic text-orange-600">
 								HTML, CSS, JavaScript, TypeScript e React
 							</span>{" "}
-							para impactar positivamente a vida das pessoas
-							através da tecnologia.
+							quanto em Back-end:{" "}
+							<span className="font-roboto-flex font-black italic text-orange-600">
+								Node.js, Express, PostgreSQL e Prisma ORM
+							</span>{" "}
+							para criar soluções completas que impactem
+							positivamente a vida das pessoas através da
+							tecnologia.
 						</p>
 
 						<p className="mb-4">
@@ -46,34 +51,36 @@ export function AboutMe() {
 							2019, minha paixão por essa área cresceu
 							exponencialmente. Concluí minha formação FullStack
 							na Rocketseat, em 2023, onde adquiri conhecimentos
-							sólidos tanto em front-end quanto em back-end.
-							Embora eu esteja direcionado a oportunidades de
-							front-end, minha formação FullStack me proporciona
-							uma visão ampla de desenvolvimento, onde possuo
-							também habilidades em Node.js e banco de dados
-							SQLite que podem agregar valor ao trabalho em
-							equipe.
+							sólidos em todas as camadas do desenvolvimento web.
+							Minha formação abrangente me proporciona uma visão
+							integrada do ciclo de desenvolvimento, permitindo-me
+							compreender e implementar tanto interfaces de
+							usuário responsivas e intuitivas quanto APIs
+							robustas e bancos de dados eficientes, agregando
+							valor significativo ao trabalho em equipe.
 						</p>
 
 						<p className="mb-4">
 							Programação para mim não é apenas um desejo
 							momentâneo, é o que quero para minha vida! Embora eu
 							esteja no começo da minha trajetória, me vejo
-							diariamente como um desenvolvedor, as dificuldades
-							impostas no caminho são grandes, mas, o que eu
-							aprendi na programação é que nunca devemos desistir
-							e sempre persistir! Com a constância dos meus
-							estudos, sei que atingirei meus objetivos.
+							diariamente como um desenvolvedor, capaz de
+							construir aplicações do zero até a implantação. As
+							dificuldades impostas no caminho são grandes, mas, o
+							que eu aprendi na programação é que nunca devemos
+							desistir e sempre persistir! Com a constância dos
+							meus estudos, sei que atingirei meus objetivos.
 						</p>
 
 						<p>
 							Estou entusiasmado para contribuir com projetos
 							desafiadores e aprender com profissionais
 							experientes. Se você está em busca de um
-							Desenvolvedor Júnior dedicado, apaixonado por
-							programação e pronto para agregar valor à sua
-							equipe, estou à disposição para conectar e
-							colaborar.
+							Desenvolvedor FullStack Júnior dedicado, capaz de
+							atuar em todas as etapas do desenvolvimento,
+							apaixonado por programação e pronto para agregar
+							valor à sua equipe, estou à disposição para conectar
+							e colaborar.
 						</p>
 					</section>
 

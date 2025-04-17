@@ -72,6 +72,9 @@ export function Resume() {
 							<li>Styled-components</li>
 							<li>Tailwindcss</li>
 							<li>Git</li>
+							<li>Node.js</li>
+							<li>PostgreSQL</li>
+							<li>Prisma ORM</li>
 						</ol>
 					</section>
 				</main>

@@ -3,14 +3,16 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import { Badge } from "@/components/ui/badge";
-import CSSLogo from "@/assets/cssLogo.png";
+import CSSLogo from "@/assets/cssLogo.svg";
 import EmailIcon from "@/assets/emailIcon.svg";
 import GitHubIcon from "@/assets/gitHubIcon.svg";
-import HTMLLogo from "@/assets/htmlLogo.png";
-import JSLogo from "@/assets/jsLogo.png";
+import HTMLLogo from "@/assets/htmlLogo.svg";
+import JSLogo from "@/assets/jsLogo.svg";
 import LinkedinIcon from "@/assets/linkedinIcon.svg";
+import NodeLogo from "@/assets/nodeLogo.svg";
+import PostgreSQLLogo from "@/assets/postgreSqlLogo.svg";
 import profileImage from "@/assets/perfil.png";
-import ReactLogo from "@/assets/reactLogo.png";
+import ReactLogo from "@/assets/reactLogo.svg";
 import WhatsAppIcon from "@/assets/whatsAppIcon.svg";
 
 function Aside() {
@@ -36,7 +38,7 @@ function Aside() {
 		<aside
 			className={`font-roboto-flex font-black border border-neutral-700 flex flex-col items-center justify-center mx-auto bg-neutral-800 overflow-hidden transition-[height] duration-1000 ease-in-out ${
 				isOpen || isLargeScreen ? "h-[420px] lg:h-[560px]" : "h-56"
-			} rounded-2xl mb-3 lg:w-72 lg:mx-0 lg:sticky lg:top-16`}>
+			} rounded-2xl mb-3 lg:w-[380px] lg:mx-0 lg:sticky lg:top-16`}>
 			<span className="w-full flex justify-end lg:hidden">
 				<Hamburger
 					toggled={isOpen}
@@ -61,13 +63,13 @@ function Aside() {
 					</p>
 
 					<Badge className="cursor-default">
-						Desenvolvedor Front-end
+						Desenvolvedor FullStack Júnior
 					</Badge>
 				</div>
 			</section>
 
 			{/* Technology logos section */}
-			<section className="flex gap-8 sm:gap-4 mb-4 mt-4">
+			<section className="flex relative gap-8 sm:gap-4 mb-4 mt-4 left-1 lg:left-[2px]">
 				<img
 					src={HTMLLogo}
 					alt="Logo HTML"
@@ -91,13 +93,27 @@ function Aside() {
 					src={ReactLogo}
 					alt="Logo React"
 					title="React"
+					className="w-7 relative transition-transform duration-500 ease-in-out hover:scale-125"
+				/>
+
+				<img
+					src={NodeLogo}
+					alt="Logo Node.js"
+					title="Node.js"
 					className="w-7 relative right-1 transition-transform duration-500 ease-in-out hover:scale-125"
+				/>
+
+				<img
+					src={PostgreSQLLogo}
+					alt="Logo PostgreSQL"
+					title="PostgreSQL"
+					className="w-7 relative right-2 transition-transform duration-500 ease-in-out hover:scale-125"
 				/>
 			</section>
 
 			{/* Section with contact information and navigation links */}
 			{(isOpen || isLargeScreen) && (
-				<section className="w-72 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2 lg:w-60">
+				<section className="w-80 text-white text-center border-t border-orange-600 mb-3 pt-5 space-y-3 px-2 lg:w-60">
 					<div className="flex items-center gap-2 pl-[2px]">
 						<img
 							src={WhatsAppIcon}
