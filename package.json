@@ -13,7 +13,7 @@
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-select": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
-    "caniuse-lite": "^1.0.30001651",
+    "caniuse-lite": "^1.0.30001715",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "emailjs-com": "^3.2.0",

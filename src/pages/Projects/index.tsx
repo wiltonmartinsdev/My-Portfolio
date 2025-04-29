@@ -19,6 +19,7 @@ import imHereImg from "@/assets/imHere.png";
 import myPortfolioImg from "@/assets/myPortfolio.png";
 import nextNoteImg from "@/assets/nextNote.png";
 import ThumbnailEP from "@/assets/thumbnail-Ep.png";
+import trackJobImg from "@/assets/trackJobImg.png";
 
 export function Projects() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -106,6 +107,15 @@ export function Projects() {
 			category: "webApp",
 			href: "https://capoeiraenergiapura.vercel.app",
 			image: ThumbnailEP,
+		},
+		{
+			id: 10,
+			title: "Track Job",
+			description:
+				"Este é um projeto pessoal desenvolvido para gerenciar e acompanhar candidaturas a vagas de emprego. Clique para saber mais...",
+			category: "webApp",
+			href: "https://track-job.vercel.app",
+			image: trackJobImg,
 		},
 	];
 
