@@ -1,4 +1,4 @@
-Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor front-end, bem como compartilhar um pouco da minha jornada e projetos. Acesse o site para ver mais!
+Bem-vindo ao meu portfólio pessoal! Criado com o objetivo de apresentar minhas habilidades como desenvolvedor FullStack Júnior, demonstrando minha capacidade em construir soluções completas. Explore o site para conhecer minha trajetória e os projetos que estou desenvolvendo!
 
 
 ## 🎨 Stack utilizada
