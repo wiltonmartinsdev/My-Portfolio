@@ -20,6 +20,7 @@ import myPortfolioImg from "@/assets/myPortfolio.png";
 import nextNoteImg from "@/assets/nextNote.png";
 import ThumbnailEP from "@/assets/thumbnail-Ep.png";
 import trackJobImg from "@/assets/trackJobImg.png";
+import gohanSushiImg from "@/assets/gohanSushiImg.png";
 
 export function Projects() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -116,6 +117,15 @@ export function Projects() {
 			category: "webApp",
 			href: "https://track-job.vercel.app",
 			image: trackJobImg,
+		},
+		{
+			id: 11,
+			title: "Gohan Sushi",
+			description:
+				"É um projeto que apresenta uma experiência gastronômica única que combina técnicas tradicionais japonesas com ingredientes frescos da região amazônica. Clique para saber mais...",
+			category: "webApp",
+			href: "https://gohan-sushi.vercel.app",
+			image: gohanSushiImg,
 		},
 	];
 
